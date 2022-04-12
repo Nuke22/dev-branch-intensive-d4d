@@ -24,6 +24,7 @@
 # Ignore drupal core (if not versioning drupal sources)
 /web/core
 /web/modules/README.txt
+/web/modules/contrib
 /web/profiles/README.txt
 /web/sites/README.txt
 /web/sites/example.sites.php
@@ -50,3 +51,5 @@
 
 #custom ignore
 /.idea
+/.editorconfig
+/.gitattributes
