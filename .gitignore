@@ -39,8 +39,6 @@
 /web/.gitattributes
 /web/.htaccess
 /web/autoload.php
-/composer.json
-/composer.lock
 /web/example.gitignore
 /web/index.php
 /web/LICENSE.txt
