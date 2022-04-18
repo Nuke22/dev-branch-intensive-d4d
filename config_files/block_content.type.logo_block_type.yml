@@ -1,0 +1,8 @@
+uuid: d738a59d-1f80-41f8-8934-a58298ef80e7
+langcode: en
+status: true
+dependencies: {  }
+id: logo_block_type
+label: 'Logo block type'
+revision: 0
+description: ''

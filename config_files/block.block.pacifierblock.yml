@@ -1,0 +1,25 @@
+uuid: 35cdf087-daef-4965-8c78-7fc2a1430218
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a9c9da99-ee55-4a1b-bc67-52069db2bb66'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: pacifierblock
+theme: bartik
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: 'block_content:a9c9da99-ee55-4a1b-bc67-52069db2bb66'
+settings:
+  id: 'block_content:a9c9da99-ee55-4a1b-bc67-52069db2bb66'
+  label: 'Pacifier block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

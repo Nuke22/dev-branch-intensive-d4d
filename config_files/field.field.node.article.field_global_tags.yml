@@ -1,0 +1,29 @@
+uuid: 7147bedc-55d4-4a86-9d3e-9c6f395cb7c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_global_tags
+    - node.type.article
+    - taxonomy.vocabulary.general_classification
+id: node.article.field_global_tags
+field_name: field_global_tags
+entity_type: node
+bundle: article
+label: 'Global tags'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      general_classification: general_classification
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

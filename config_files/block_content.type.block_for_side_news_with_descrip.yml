@@ -1,0 +1,8 @@
+uuid: c8231ee6-6afb-491f-835d-6a05a4dad983
+langcode: en
+status: true
+dependencies: {  }
+id: block_for_side_news_with_descrip
+label: 'Block for side news with description'
+revision: 0
+description: 'Update! This kind of block is for footer content'

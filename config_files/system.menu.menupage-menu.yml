@@ -1,0 +1,8 @@
+uuid: 5cde6320-2ac6-4fc0-94c6-b83bd70db81d
+langcode: en
+status: true
+dependencies: {  }
+id: menupage-menu
+label: 'Menupage: menu'
+description: 'Static inner menu'
+locked: false

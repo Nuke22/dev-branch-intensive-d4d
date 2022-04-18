@@ -1,0 +1,25 @@
+uuid: 932cffb9-1ede-4c49-8de2-43473f461342
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:link_only_block_type:061ae296-ec88-4359-9d61-2772346dc3a2'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: myaccountbuttonheader
+theme: bartik
+region: header
+weight: -7
+provider: null
+plugin: 'block_content:061ae296-ec88-4359-9d61-2772346dc3a2'
+settings:
+  id: 'block_content:061ae296-ec88-4359-9d61-2772346dc3a2'
+  label: 'My account button (header)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

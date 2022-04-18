@@ -1,0 +1,8 @@
+uuid: dafd9062-7ceb-497d-afa8-28180fe225e5
+langcode: en
+status: true
+dependencies: {  }
+id: link_only_block_type
+label: 'Link only - block type'
+revision: 0
+description: ''

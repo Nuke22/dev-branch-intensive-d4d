@@ -1,0 +1,49 @@
+uuid: 96d391ee-cebb-4b9b-811f-00d0b14b0c2a
+langcode: en
+status: false
+dependencies:
+  config:
+    - comment.type.custom_comments
+    - core.entity_view_mode.comment.full
+    - field.field.comment.custom_comments.comment_body
+    - field.field.comment.custom_comments.field_author_s
+    - field.field.comment.custom_comments.field_author_s_name
+    - field.field.comment.custom_comments.field_author_s_website
+    - field.field.comment.custom_comments.field_save_data
+  module:
+    - text
+id: comment.custom_comments.full
+targetEntityType: comment
+bundle: custom_comments
+mode: full
+content:
+  comment_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_author_s:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_author_s_name:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  field_author_s_website: true
+  field_save_data: true

@@ -1,0 +1,23 @@
+uuid: 1839c06f-b36e-4ef7-a444-247e0eeb3eab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exclusive
+    - node.type.article
+id: node.article.field_exclusive
+field_name: field_exclusive
+entity_type: node
+bundle: article
+label: Exclusive
+description: 'Check if the content is exclusive'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

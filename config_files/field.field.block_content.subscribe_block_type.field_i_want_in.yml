@@ -1,0 +1,23 @@
+uuid: 2eb54d39-364b-42f7-a536-6a85724622a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.subscribe_block_type
+    - field.storage.block_content.field_i_want_in
+id: block_content.subscribe_block_type.field_i_want_in
+field_name: field_i_want_in
+entity_type: block_content
+bundle: subscribe_block_type
+label: 'I want in'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

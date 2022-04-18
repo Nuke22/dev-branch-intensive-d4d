@@ -1,0 +1,19 @@
+uuid: 4130280d-14b6-4ad8-8458-381553127e7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.custom_comments
+    - field.storage.comment.field_author_s
+id: comment.custom_comments.field_author_s
+field_name: field_author_s
+entity_type: comment
+bundle: custom_comments
+label: 'Author''s name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: e92907eb-9fef-4c59-bb64-650081fec3a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.subscribe_block_type
+    - field.storage.block_content.field_read_the_policy
+id: block_content.subscribe_block_type.field_read_the_policy
+field_name: field_read_the_policy
+entity_type: block_content
+bundle: subscribe_block_type
+label: 'Read the policy'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

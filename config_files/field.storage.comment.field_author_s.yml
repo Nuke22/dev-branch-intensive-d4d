@@ -1,0 +1,21 @@
+uuid: 2f1b80ca-a12a-4bce-a78c-dc9908998cec
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+id: comment.field_author_s
+field_name: field_author_s
+entity_type: comment
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

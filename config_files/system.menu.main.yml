@@ -1,0 +1,10 @@
+uuid: e4dc9f6f-da67-44fe-9a78-7fbb4ed4a45e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
+id: main
+label: 'Main navigation'
+description: 'Menu to be displayed in primary menu and in the footer part'
+locked: true

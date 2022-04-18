@@ -1,0 +1,42 @@
+uuid: 0b01699e-8f30-441d-aa6d-ca414f225fed
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.subscribe_block_type
+    - field.field.block_content.subscribe_block_type.field_email
+    - field.field.block_content.subscribe_block_type.field_i_want_in
+    - field.field.block_content.subscribe_block_type.field_read_the_policy
+id: block_content.subscribe_block_type.default
+targetEntityType: block_content
+bundle: subscribe_block_type
+mode: default
+content:
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_i_want_in:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_read_the_policy:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

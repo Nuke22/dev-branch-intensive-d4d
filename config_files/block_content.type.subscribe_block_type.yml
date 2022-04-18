@@ -1,0 +1,8 @@
+uuid: 166de8eb-2826-4d02-a279-a834a1485e16
+langcode: en
+status: true
+dependencies: {  }
+id: subscribe_block_type
+label: 'Subscribe block type'
+revision: 0
+description: ''

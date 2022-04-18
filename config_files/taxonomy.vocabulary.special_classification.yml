@@ -1,0 +1,8 @@
+uuid: f11f2324-ea01-4f7a-99d9-70c88fcc1c5b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Special classification'
+vid: special_classification
+description: 'Tags for everything that is trending'
+weight: 0

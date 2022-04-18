@@ -1,0 +1,21 @@
+uuid: ea0b0fb0-0d33-4369-a4bf-33ca5e388e70
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.field_list
+  module:
+    - options
+id: block_content.basic.field_list
+field_name: field_list
+entity_type: block_content
+bundle: basic
+label: List
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

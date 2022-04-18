@@ -1,0 +1,29 @@
+uuid: 1296cfb9-26b6-4254-9421-3684b1f0c777
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trending_tags
+    - node.type.article
+    - taxonomy.vocabulary.special_classification
+id: node.article.field_trending_tags
+field_name: field_trending_tags
+entity_type: node
+bundle: article
+label: 'Trending tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      special_classification: special_classification
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

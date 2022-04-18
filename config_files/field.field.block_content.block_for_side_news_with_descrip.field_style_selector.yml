@@ -1,0 +1,23 @@
+uuid: 0a948bab-2e6b-4c60-83dc-efb1df886e8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_for_side_news_with_descrip
+    - field.storage.block_content.field_style_selector
+  module:
+    - options
+id: block_content.block_for_side_news_with_descrip.field_style_selector
+field_name: field_style_selector
+entity_type: block_content
+bundle: block_for_side_news_with_descrip
+label: 'Style selector'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: Simple
+default_value_callback: ''
+settings: {  }
+field_type: list_string

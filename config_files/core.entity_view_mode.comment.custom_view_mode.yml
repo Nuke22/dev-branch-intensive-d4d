@@ -1,0 +1,10 @@
+uuid: 296651a4-758d-42c1-89c2-52971fb38330
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+id: comment.custom_view_mode
+label: 'Custom view mode'
+targetEntityType: comment
+cache: true

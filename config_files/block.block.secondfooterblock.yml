@@ -1,0 +1,25 @@
+uuid: 429411b2-f411-4b40-8153-c2ba7f22bfee
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_for_side_news_with_descrip:fc984b35-f87d-45f2-83b3-9bb816b65825'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: secondfooterblock
+theme: bartik
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:fc984b35-f87d-45f2-83b3-9bb816b65825'
+settings:
+  id: 'block_content:fc984b35-f87d-45f2-83b3-9bb816b65825'
+  label: Configure
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

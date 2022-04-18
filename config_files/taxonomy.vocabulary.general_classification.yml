@@ -1,0 +1,8 @@
+uuid: 6aafbc2e-e8da-4509-881d-5ce956c9474c
+langcode: en
+status: true
+dependencies: {  }
+name: 'General classification'
+vid: general_classification
+description: 'There you have a general classification for site nodes (like music, celebrities, etc)'
+weight: 0

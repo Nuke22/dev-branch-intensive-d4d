@@ -1,0 +1,19 @@
+uuid: ac98b1df-6bb0-4ed1-aa7f-b8568937e959
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_for_side_news_with_descrip
+    - field.storage.block_content.field_description
+id: block_content.block_for_side_news_with_descrip.field_description
+field_name: field_description
+entity_type: block_content
+bundle: block_for_side_news_with_descrip
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,25 @@
+uuid: 80d28995-03f7-4067-84f6-0402552919a3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8a71cf9a-4829-4ca4-b48d-805cb971b00f'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: newcredits
+theme: bartik
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'block_content:8a71cf9a-4829-4ca4-b48d-805cb971b00f'
+settings:
+  id: 'block_content:8a71cf9a-4829-4ca4-b48d-805cb971b00f'
+  label: 'New Credits'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

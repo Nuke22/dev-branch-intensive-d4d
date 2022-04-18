@@ -1,0 +1,19 @@
+uuid: 05d3a341-02f4-43f0-a766-3537c1b30a48
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.subscribe_block_type
+    - field.storage.block_content.field_email
+id: block_content.subscribe_block_type.field_email
+field_name: field_email
+entity_type: block_content
+bundle: subscribe_block_type
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email
