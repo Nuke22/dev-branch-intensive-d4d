@@ -1,0 +1,29 @@
+uuid: 66dd6fd0-1466-4ed2-82fd-2f06a237f53e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.frontpage_content_main_content_blocks
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__frontpage_content_main_content_blocks_block_1
+theme: bartik
+region: content
+weight: -10
+provider: null
+plugin: 'views_block:frontpage_content_main_content_blocks-block_1'
+settings:
+  id: 'views_block:frontpage_content_main_content_blocks-block_1'
+  label: Breaking
+  label_display: visible
+  provider: views
+  views_label: Breaking
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

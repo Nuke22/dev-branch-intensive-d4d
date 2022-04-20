@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.custom_footer_exclusive_title_gt_date
     - field.storage.node.field_global_tags
     - node.type.article
   module:
@@ -257,7 +258,10 @@ display:
       style:
         type: default
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: custom_footer_exclusive_title_gt_date
       query:
         type: views_query
         options:

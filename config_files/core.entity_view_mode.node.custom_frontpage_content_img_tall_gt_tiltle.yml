@@ -1,0 +1,10 @@
+uuid: e96bd7db-6582-4664-afc2-c31f35f9f28b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.custom_frontpage_content_img_tall_gt_tiltle
+label: 'Custom | Frontpage: Content: Img(Tall)->GT->Tiltle'
+targetEntityType: node
+cache: true

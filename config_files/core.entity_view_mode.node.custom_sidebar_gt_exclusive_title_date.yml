@@ -1,0 +1,10 @@
+uuid: 08fb47a6-97a5-4136-898b-b08e906c1571
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.custom_sidebar_gt_exclusive_title_date
+label: 'Custom | Sidebar: GT->Exclusive->Title->Date'
+targetEntityType: node
+cache: true

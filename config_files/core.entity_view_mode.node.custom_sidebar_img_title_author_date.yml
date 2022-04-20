@@ -1,0 +1,10 @@
+uuid: aa0f2631-67a7-49b8-b038-1bb6ed383f75
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.custom_sidebar_img_title_author_date
+label: 'Custom | Sidebar: Img(Tall)->Title->Author->Date'
+targetEntityType: node
+cache: true

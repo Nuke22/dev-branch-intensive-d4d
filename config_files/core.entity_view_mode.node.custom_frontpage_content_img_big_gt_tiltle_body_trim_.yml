@@ -1,0 +1,10 @@
+uuid: f60e33df-5621-45dd-a30e-941a8a7cfa22
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.custom_frontpage_content_img_big_gt_tiltle_body_trim_
+label: 'Custom | Frontpage: Content: Img(Big)->GT->Tiltle->Body(trim)'
+targetEntityType: node
+cache: true

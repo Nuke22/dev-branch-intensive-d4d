@@ -1,9 +1,9 @@
-uuid: 2d80bf0c-c28f-474a-8fe2-e60ffeb61e96
+uuid: 8d457837-0b5c-4b8c-9cd2-466ed91ab1ab
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.search_result
+    - core.entity_view_mode.node.custom_sidebar_title_gt_date
     - field.field.node.article.body
     - field.field.node.article.field_custom_comments_field
     - field.field.node.article.field_display_title
@@ -13,31 +13,37 @@ dependencies:
     - field.field.node.article.field_trending_tags
     - node.type.article
   module:
-    - text
+    - title_field_for_manage_display
     - user
 _core:
   default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
-id: node.article.search_result
+id: node.article.custom_sidebar_title_gt_date
 targetEntityType: node
 bundle: article
-mode: search_result
+mode: custom_sidebar_title_gt_date
 content:
-  body:
-    type: text_default
+  field_display_title:
+    type: title_value_field_formatter
     label: hidden
-    settings: {  }
+    settings:
+      tag: h4
+      linked: '1'
+      classes: ''
     third_party_settings: {  }
     weight: 0
     region: content
-  links:
-    settings: {  }
+  field_global_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
+  body: true
   field_custom_comments_field: true
-  field_display_title: true
   field_exclusive: true
-  field_global_tags: true
   field_main_image: true
   field_trending_tags: true
+  links: true

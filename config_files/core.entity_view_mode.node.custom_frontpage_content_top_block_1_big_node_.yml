@@ -1,0 +1,10 @@
+uuid: 1939d4fd-1d91-4240-b68c-6b7803a09ba8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.custom_frontpage_content_top_block_1_big_node_
+label: 'Custom | Frontpage: Content: top block (1 big node)'
+targetEntityType: node
+cache: true

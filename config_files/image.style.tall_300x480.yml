@@ -1,0 +1,15 @@
+uuid: a6885466-4c29-4abb-bf9d-cf68c8148c4a
+langcode: en
+status: true
+dependencies: {  }
+name: tall_300x480
+label: 'Tall 300x480'
+effects:
+  62a0bbfc-3e3b-4e31-bcc8-57e38b9ed594:
+    uuid: 62a0bbfc-3e3b-4e31-bcc8-57e38b9ed594
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 480
+      anchor: center-center

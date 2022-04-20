@@ -7,6 +7,7 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.article.body
     - field.field.node.article.field_custom_comments_field
+    - field.field.node.article.field_display_title
     - field.field.node.article.field_exclusive
     - field.field.node.article.field_global_tags
     - field.field.node.article.field_main_image
@@ -17,6 +18,7 @@ dependencies:
     - comment
     - media
     - text
+    - title_field_for_manage_display
     - user
 _core:
   default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
@@ -30,7 +32,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_custom_comments_field:
     type: comment_default
@@ -39,7 +41,17 @@ content:
       view_mode: custom_view_mode
       pager_id: 0
     third_party_settings: {  }
-    weight: 5
+    weight: 6
+    region: content
+  field_display_title:
+    type: title_value_field_formatter
+    label: hidden
+    settings:
+      tag: h2
+      linked: '1'
+      classes: ''
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_global_tags:
     type: entity_reference_label
@@ -47,7 +59,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_main_image:
     type: media_thumbnail
@@ -56,7 +68,7 @@ content:
       image_link: ''
       image_style: large
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_trending_tags:
     type: entity_reference_label
@@ -64,12 +76,12 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
 hidden:
   field_exclusive: true

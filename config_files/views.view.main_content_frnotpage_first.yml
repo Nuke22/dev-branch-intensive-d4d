@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.custom_frontpage_content_img_big_gt_tiltle_body_trim_
+    - core.entity_view_mode.node.custom_frontpage_content_img_mid_gt_tiltle
     - field.storage.node.body
     - field.storage.node.field_global_tags
     - field.storage.node.field_main_image
@@ -15,7 +17,7 @@ dependencies:
     - text
     - user
 id: main_content_frnotpage_first
-label: 'Main content frnotpage first'
+label: 'Frontpage:Content: top block'
 module: views
 description: ''
 tag: ''
@@ -321,13 +323,10 @@ display:
       style:
         type: default
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: true
-          inline:
-            title: title
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: custom_frontpage_content_img_big_gt_tiltle_body_trim_
       query:
         type: views_query
         options:
@@ -620,7 +619,17 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+      style:
+        type: default
+        options: {  }
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: custom_frontpage_content_img_mid_gt_tiltle
       defaults:
+        style: false
+        row: false
         fields: false
       display_description: ''
       display_extenders: {  }

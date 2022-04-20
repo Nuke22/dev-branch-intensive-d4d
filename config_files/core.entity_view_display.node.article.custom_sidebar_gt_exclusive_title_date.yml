@@ -1,8 +1,9 @@
-uuid: ab78fe31-c2c3-4639-810e-10d56510d0ea
+uuid: fdb36d24-9027-462b-a1ee-5642e007e87f
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.custom_sidebar_gt_exclusive_title_date
     - field.field.node.article.body
     - field.field.node.article.field_custom_comments_field
     - field.field.node.article.field_display_title
@@ -12,15 +13,14 @@ dependencies:
     - field.field.node.article.field_trending_tags
     - node.type.article
   module:
-    - media
     - title_field_for_manage_display
     - user
 _core:
   default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
-id: node.article.default
+id: node.article.custom_sidebar_gt_exclusive_title_date
 targetEntityType: node
 bundle: article
-mode: default
+mode: custom_sidebar_gt_exclusive_title_date
 content:
   field_display_title:
     type: title_value_field_formatter
@@ -30,17 +30,17 @@ content:
       linked: '1'
       classes: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_exclusive:
     type: boolean
     label: hidden
     settings:
       format: custom
-      format_custom_false: ''
+      format_custom_false: нє
       format_custom_true: Exclusive
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_global_tags:
     type: entity_reference_label
@@ -48,19 +48,11 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 2
-    region: content
-  field_main_image:
-    type: media_thumbnail
-    label: hidden
-    settings:
-      image_link: ''
-      image_style: ''
-    third_party_settings: {  }
-    weight: 3
+    weight: 0
     region: content
 hidden:
   body: true
   field_custom_comments_field: true
+  field_main_image: true
   field_trending_tags: true
   links: true

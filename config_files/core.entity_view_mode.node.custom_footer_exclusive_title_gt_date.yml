@@ -1,0 +1,10 @@
+uuid: b34acbad-2c38-4b99-86d0-5056e1b60366
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.custom_footer_exclusive_title_gt_date
+label: 'Custom | Footer: Exclusive->Title->GT->Date'
+targetEntityType: node
+cache: true
