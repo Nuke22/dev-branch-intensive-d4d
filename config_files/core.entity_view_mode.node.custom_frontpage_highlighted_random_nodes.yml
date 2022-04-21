@@ -1,0 +1,10 @@
+uuid: 6810bc34-4ac1-4b26-a746-f4bc8b47d5ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.custom_frontpage_highlighted_random_nodes
+label: 'Custom | Frontpage: Highlighted: Random nodes'
+targetEntityType: node
+cache: true

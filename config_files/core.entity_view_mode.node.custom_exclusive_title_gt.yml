@@ -1,0 +1,10 @@
+uuid: e5e3dc03-aa43-4593-bbee-508b723ddde6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.custom_exclusive_title_gt
+label: 'Custom | Exclusive->Title->GT'
+targetEntityType: node
+cache: true

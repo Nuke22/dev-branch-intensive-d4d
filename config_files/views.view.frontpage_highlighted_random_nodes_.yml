@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.custom_frontpage_highlighted_random_nodes
     - field.storage.node.field_exclusive
     - node.type.article
   module:
@@ -279,7 +280,10 @@ display:
           col_class_custom: ''
           col_class_default: true
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: custom_frontpage_highlighted_random_nodes
       query:
         type: views_query
         options:

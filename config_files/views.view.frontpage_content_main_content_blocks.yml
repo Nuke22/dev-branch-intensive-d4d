@@ -3,6 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.custom_frontpage_content_exclusive_title_gt_img_small_
+    - core.entity_view_mode.node.custom_frontpage_content_img_tall_gt_tiltle
+    - core.entity_view_mode.node.teaser
     - field.storage.node.field_global_tags
     - field.storage.node.field_main_image
     - image.style.large
@@ -16,7 +19,7 @@ dependencies:
     - taxonomy
     - user
 id: frontpage_content_main_content_blocks
-label: 'Frontpage:Content: main content blocks'
+label: 'Frontpage: Content: main content blocks'
 module: views
 description: ''
 tag: ''
@@ -320,7 +323,9 @@ display:
       style:
         type: default
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          view_mode: teaser
       query:
         type: views_query
         options:
@@ -558,8 +563,10 @@ display:
           col_class_custom: ''
           col_class_default: true
       row:
-        type: fields
-        options: {  }
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: custom_frontpage_content_img_tall_gt_tiltle
       defaults:
         style: false
         row: false
@@ -584,7 +591,25 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      style:
+        type: grid
+        options:
+          uses_fields: false
+          columns: 4
+          automatic_width: true
+          alignment: horizontal
+          row_class_custom: ''
+          row_class_default: true
+          col_class_custom: ''
+          col_class_default: true
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: custom_frontpage_content_exclusive_title_gt_img_small_
       defaults:
+        style: false
+        row: false
         filters: true
         filter_groups: true
       display_description: ''

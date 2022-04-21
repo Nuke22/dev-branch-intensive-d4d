@@ -1,0 +1,10 @@
+uuid: 15c9f0af-1d0b-4786-880e-57a2b85ea93c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.custom_frontpage_content_exclusive_title_gt_img_small_
+label: 'Custom | Frontpage: Content: Exclusive->Title->GT->Img(Small)'
+targetEntityType: node
+cache: true

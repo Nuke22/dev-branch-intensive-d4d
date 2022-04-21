@@ -3,6 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.custom_sidebar_gt_exclusive_title_date
+    - core.entity_view_mode.node.custom_sidebar_img_title_author_date
+    - core.entity_view_mode.node.custom_sidebar_title_gt_date
     - field.storage.node.field_exclusive
     - field.storage.node.field_global_tags
     - field.storage.node.field_main_image
@@ -18,7 +21,7 @@ dependencies:
     - taxonomy
     - user
 id: side_newsblocks_1
-label: 'Side newsblocks 1'
+label: 'Frontpage: Side newsblocks'
 module: views
 description: ''
 tag: ''
@@ -858,7 +861,17 @@ display:
         operator: AND
         groups:
           1: AND
+      style:
+        type: default
+        options: {  }
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: custom_sidebar_img_title_author_date
       defaults:
+        style: false
+        row: false
         fields: false
         filters: false
         filter_groups: false
@@ -875,23 +888,10 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<p style="background-color: black; color: white; text-align:center; font-size: 1.3rem">Marketing</p>'
+            value: '<strong>Marketing</strong>'
             format: full_html
           tokenize: false
-      footer:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: false
-          content:
-            value: '<hr style="opacity: 0.6;">'
-            format: full_html
-          tokenize: false
+      footer: {  }
       display_extenders: {  }
       displays:
         block_3: block_3
@@ -942,7 +942,17 @@ display:
         operator: AND
         groups:
           1: AND
+      style:
+        type: default
+        options: {  }
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: custom_sidebar_title_gt_date
       defaults:
+        style: false
+        row: false
         fields: true
         filters: false
         filter_groups: false
@@ -1328,9 +1338,23 @@ display:
         operator: AND
         groups:
           1: AND
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: custom_sidebar_gt_exclusive_title_date
       defaults:
         title: false
         pager: false
+        style: false
+        row: false
         fields: false
         filters: false
         filter_groups: false
@@ -1739,8 +1763,21 @@ display:
         operator: AND
         groups:
           1: AND
+      style:
+        type: default
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: custom_sidebar_title_gt_date
       defaults:
         title: false
+        style: false
+        row: false
         fields: false
         filters: false
         filter_groups: false

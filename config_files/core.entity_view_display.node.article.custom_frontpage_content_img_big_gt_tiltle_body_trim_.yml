@@ -1,8 +1,9 @@
-uuid: ab78fe31-c2c3-4639-810e-10d56510d0ea
+uuid: e61a0b7f-7612-48d4-b7e3-dbdd299ba0b6
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.custom_frontpage_content_img_big_gt_tiltle_body_trim_
     - field.field.node.article.body
     - field.field.node.article.field_custom_comments_field
     - field.field.node.article.field_display_title
@@ -10,18 +11,28 @@ dependencies:
     - field.field.node.article.field_global_tags
     - field.field.node.article.field_main_image
     - field.field.node.article.field_trending_tags
+    - image.style.large
     - node.type.article
   module:
     - media
+    - text
     - title_field_for_manage_display
     - user
 _core:
   default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
-id: node.article.default
+id: node.article.custom_frontpage_content_img_big_gt_tiltle_body_trim_
 targetEntityType: node
 bundle: article
-mode: default
+mode: custom_frontpage_content_img_big_gt_tiltle_body_trim_
 content:
+  body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 150
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_display_title:
     type: title_value_field_formatter
     label: hidden
@@ -30,17 +41,7 @@ content:
       linked: '1'
       classes: ''
     third_party_settings: {  }
-    weight: 1
-    region: content
-  field_exclusive:
-    type: boolean
-    label: hidden
-    settings:
-      format: custom
-      format_custom_false: ''
-      format_custom_true: Exclusive
-    third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
   field_global_tags:
     type: entity_reference_label
@@ -48,19 +49,19 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_main_image:
     type: media_thumbnail
     label: hidden
     settings:
-      image_link: ''
-      image_style: ''
+      image_link: content
+      image_style: large
     third_party_settings: {  }
-    weight: 3
+    weight: 0
     region: content
 hidden:
-  body: true
   field_custom_comments_field: true
+  field_exclusive: true
   field_trending_tags: true
   links: true

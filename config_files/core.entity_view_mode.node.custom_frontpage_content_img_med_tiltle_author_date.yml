@@ -1,0 +1,10 @@
+uuid: 33718a0f-b0b6-453d-aac3-0d73194d9c10
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.custom_frontpage_content_img_med_tiltle_author_date
+label: 'Custom | Frontpage: Content: Img(Med)->Tiltle->Author->Date'
+targetEntityType: node
+cache: true

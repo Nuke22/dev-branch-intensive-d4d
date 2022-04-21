@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.field_custom_comments_field
+    - field.field.node.article.field_display_title
     - field.field.node.article.field_exclusive
     - field.field.node.article.field_global_tags
     - field.field.node.article.field_main_image
@@ -61,14 +62,10 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_main_image:
-    type: entity_reference_autocomplete
+    type: options_select
     weight: 1
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_trending_tags:
     type: entity_reference_autocomplete
@@ -125,4 +122,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_display_title: true
