@@ -10,7 +10,7 @@ dependencies:
     - node
     - user
 id: frontpage_highlighted_random_nodes_
-label: 'Frontpage:Highlighted: Random nodes '
+label: 'Frontpage: Highlighted: Random nodes '
 module: views
 description: ''
 tag: ''

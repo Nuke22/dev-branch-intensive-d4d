@@ -11,7 +11,7 @@ dependencies:
     - field.field.node.article.field_global_tags
     - field.field.node.article.field_main_image
     - field.field.node.article.field_trending_tags
-    - image.style.medium
+    - image.style.teaser_300x250
     - node.type.article
   module:
     - media
@@ -56,7 +56,7 @@ content:
     label: hidden
     settings:
       image_link: content
-      image_style: medium
+      image_style: teaser_300x250
     third_party_settings: {  }
     weight: 0
     region: content

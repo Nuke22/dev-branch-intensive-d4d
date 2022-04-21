@@ -1,0 +1,29 @@
+uuid: 86ff5f26-1058-479b-8041-536c30511e2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.frontpage_food_travel
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__frontpage_food_travel_block_1
+theme: bartik
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:frontpage_food_travel-block_1'
+settings:
+  id: 'views_block:frontpage_food_travel-block_1'
+  label: 'Food & Travel'
+  label_display: visible
+  provider: views
+  views_label: 'Food & Travel'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

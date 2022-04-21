@@ -1,0 +1,29 @@
+uuid: e4473189-7a80-428f-b4fd-8f06149e564e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.frontpage_celebrity
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__frontpage_celebrity_block_1
+theme: bartik
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:frontpage_celebrity-block_1'
+settings:
+  id: 'views_block:frontpage_celebrity-block_1'
+  label: Celebrity
+  label_display: visible
+  provider: views
+  views_label: Celebrity
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

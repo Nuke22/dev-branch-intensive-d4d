@@ -32,6 +32,16 @@ content:
       linked: '1'
       classes: ''
     third_party_settings: {  }
+    weight: 3
+    region: content
+  field_exclusive:
+    type: boolean
+    label: hidden
+    settings:
+      format: custom
+      format_custom_false: ''
+      format_custom_true: Exclusive
+    third_party_settings: {  }
     weight: 2
     region: content
   field_global_tags:
@@ -54,6 +64,5 @@ content:
 hidden:
   body: true
   field_custom_comments_field: true
-  field_exclusive: true
   field_trending_tags: true
   links: true

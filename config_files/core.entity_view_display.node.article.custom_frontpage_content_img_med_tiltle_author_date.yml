@@ -11,8 +11,10 @@ dependencies:
     - field.field.node.article.field_global_tags
     - field.field.node.article.field_main_image
     - field.field.node.article.field_trending_tags
+    - image.style.medium
     - node.type.article
   module:
+    - media
     - title_field_for_manage_display
     - user
 _core:
@@ -30,24 +32,34 @@ content:
       linked: '1'
       classes: ''
     third_party_settings: {  }
+    weight: 2
+    region: content
+  field_exclusive:
+    type: boolean
+    label: hidden
+    settings:
+      format: custom
+      format_custom_false: ''
+      format_custom_true: Exclusive
+    third_party_settings: {  }
     weight: 1
     region: content
   field_main_image:
-    type: entity_reference_label
+    type: media_thumbnail
     label: hidden
     settings:
-      link: true
+      image_link: content
+      image_style: medium
     third_party_settings: {  }
     weight: 0
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
 hidden:
   body: true
   field_custom_comments_field: true
-  field_exclusive: true
   field_global_tags: true
   field_trending_tags: true

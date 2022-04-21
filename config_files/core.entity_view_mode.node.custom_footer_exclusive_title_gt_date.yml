@@ -5,6 +5,6 @@ dependencies:
   module:
     - node
 id: node.custom_footer_exclusive_title_gt_date
-label: 'Custom | Footer: Exclusive->Title->GT->Date'
+label: 'Custom | Footer & Content: Exclusive->Title->GT->Date'
 targetEntityType: node
 cache: true
