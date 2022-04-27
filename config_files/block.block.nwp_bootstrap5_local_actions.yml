@@ -1,0 +1,20 @@
+uuid: b5833e3f-9997-4109-8a70-53a05591d814
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nwp_bootstrap5
+_core:
+  default_config_hash: T6kXtyrEN5zaqdY2JnoWaS9C6OVqlRnfAFA_zz3s77o
+id: nwp_bootstrap5_local_actions
+theme: nwp_bootstrap5
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

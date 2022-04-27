@@ -1,0 +1,27 @@
+uuid: ddf5c15a-0e97-43be-95f2-d4651b856571
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - nwp_bootstrap5
+_core:
+  default_config_hash: 2rhyqOcjUlklYy2Hb1Z9BUTl9y6jTnXBI4NFtck1jEE
+id: nwp_bootstrap5_main_navigation
+theme: nwp_bootstrap5
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 3e8293e9-676a-4a75-994f-1b5328fad492
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nwp_bootstrap5
+_core:
+  default_config_hash: 7Z55lRPPIxitVkrQuEy0FFakyK0s9PTNHXLQPOP_qks
+id: nwp_bootstrap5_local_tasks
+theme: nwp_bootstrap5
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

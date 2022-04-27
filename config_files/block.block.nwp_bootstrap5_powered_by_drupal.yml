@@ -1,0 +1,22 @@
+uuid: 60239133-fa69-427f-a4d1-4d06b7e28a20
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nwp_bootstrap5
+_core:
+  default_config_hash: 9zfPlXfda8Lkq_QnnI_MnGhDKMy0AW0x6YFi4DknTjk
+id: nwp_bootstrap5_powered_by_drupal
+theme: nwp_bootstrap5
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

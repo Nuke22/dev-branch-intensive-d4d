@@ -1,0 +1,22 @@
+uuid: 72a6e5bf-5747-4f6c-8f18-8fe36653d03b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nwp_bootstrap5
+_core:
+  default_config_hash: smd12jRUCad9_ETl5uzxgAi3VhgVZlXnBxi-RgkJXg4
+id: nwp_bootstrap5_content
+theme: nwp_bootstrap5
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

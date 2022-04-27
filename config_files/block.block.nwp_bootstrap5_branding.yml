@@ -1,0 +1,25 @@
+uuid: 3fa46942-453c-42e0-9c34-a9cedfcc7eb4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nwp_bootstrap5
+_core:
+  default_config_hash: b7-eTId2bXaj4HrU3rswXzvO-5uZseka7C1vY-T_F2A
+id: nwp_bootstrap5_branding
+theme: nwp_bootstrap5
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

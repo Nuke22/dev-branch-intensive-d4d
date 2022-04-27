@@ -1,0 +1,22 @@
+uuid: 8ac404fd-f4e0-4e60-981c-ada6b73a2854
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nwp_bootstrap5
+_core:
+  default_config_hash: 3KQioY0fb7PmRuu7IWgNfjsgNbRNYA9H4HQ-j3ts4io
+id: nwp_bootstrap5_messages
+theme: nwp_bootstrap5
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

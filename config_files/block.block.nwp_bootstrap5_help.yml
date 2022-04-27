@@ -1,0 +1,22 @@
+uuid: 16b312db-caa2-46d2-8749-dcdfb087499a
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - nwp_bootstrap5
+_core:
+  default_config_hash: AiFShDr9wAzmjwWT8pMeX4c9w3O-omj63GLZEuy8iqY
+id: nwp_bootstrap5_help
+theme: nwp_bootstrap5
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
