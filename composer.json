@@ -34,6 +34,8 @@
         "drupal/core-recommended": "^9.3",
         "drupal/dropzonejs": "^2.6",
         "drupal/media_bulk_upload": "^3.0",
+        "drupal/page_manager": "^4.0@beta",
+        "drupal/paragraphs": "^1.14",
         "drupal/title_field_for_manage_display": "^2.0",
         "enyo/dropzone": "^5.7"
     },
