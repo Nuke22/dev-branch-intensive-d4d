@@ -1,0 +1,36 @@
+uuid: fde8ca63-277e-4b3b-ba2e-4f04e65fe5a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.article_s_body.field_img
+    - field.field.paragraph.article_s_body.field_text
+    - paragraphs.paragraphs_type.article_s_body
+  module:
+    - text
+id: paragraph.article_s_body.default
+targetEntityType: paragraph
+bundle: article_s_body
+mode: default
+content:
+  field_img:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
