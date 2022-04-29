@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
+    - field.field.node.article.field_body_via_paragraphs
     - field.field.node.article.field_custom_comments_field
     - field.field.node.article.field_exclusive
     - field.field.node.article.field_global_tags
@@ -11,6 +12,7 @@ dependencies:
     - field.field.node.article.field_trending_tags
     - node.type.article
   module:
+    - entity_reference_revisions
     - media
     - user
 _core:
@@ -20,6 +22,15 @@ targetEntityType: node
 bundle: article
 mode: default
 content:
+  field_body_via_paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
   field_exclusive:
     type: boolean
     label: hidden

@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.search_result
     - field.field.node.article.body
+    - field.field.node.article.field_body_via_paragraphs
     - field.field.node.article.field_custom_comments_field
     - field.field.node.article.field_exclusive
     - field.field.node.article.field_global_tags
@@ -34,6 +35,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_body_via_paragraphs: true
   field_custom_comments_field: true
   field_exclusive: true
   field_global_tags: true
