@@ -7,7 +7,6 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.article.body
     - field.field.node.article.field_custom_comments_field
-    - field.field.node.article.field_display_title
     - field.field.node.article.field_exclusive
     - field.field.node.article.field_global_tags
     - field.field.node.article.field_main_image
@@ -18,7 +17,6 @@ dependencies:
     - comment
     - media
     - text
-    - title_field_for_manage_display
     - user
 _core:
   default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
@@ -42,16 +40,6 @@ content:
       pager_id: 0
     third_party_settings: {  }
     weight: 6
-    region: content
-  field_display_title:
-    type: title_value_field_formatter
-    label: hidden
-    settings:
-      tag: h2
-      linked: '1'
-      classes: ''
-    third_party_settings: {  }
-    weight: 0
     region: content
   field_global_tags:
     type: entity_reference_label

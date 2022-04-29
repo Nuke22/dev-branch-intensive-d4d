@@ -1,0 +1,103 @@
+uuid: 23c614c0-1197-431b-ab45-ccd5b9d358d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.category_page.field_category
+    - node.type.category_page
+    - system.menu.menupage-menu
+    - views.view.article_by_category
+    - views.view.article_by_category_highlighted_top_
+  module:
+    - layout_builder
+    - layout_discovery
+    - system
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Head
+          context_mapping: {  }
+        components:
+          b3c5c83b-85df-4052-a010-71b7054fcb25:
+            uuid: b3c5c83b-85df-4052-a010-71b7054fcb25
+            region: content
+            configuration:
+              id: 'system_menu_block:menupage-menu'
+              label: 'Menupage: menu'
+              label_display: '0'
+              provider: system
+              context_mapping: {  }
+              level: 1
+              depth: 0
+              expand_all_items: false
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Highlighted nodes'
+          context_mapping: {  }
+        components:
+          84a2f280-bd8d-4cf4-bb93-44bdd22b96a6:
+            uuid: 84a2f280-bd8d-4cf4-bb93-44bdd22b96a6
+            region: content
+            configuration:
+              id: 'views_block:article_by_category_highlighted_top_-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Main area'
+          context_mapping: {  }
+          column_widths: 75-25
+        components:
+          a9e6fcba-a2d8-48e9-be93-6fdaf7f690bf:
+            uuid: a9e6fcba-a2d8-48e9-be93-6fdaf7f690bf
+            region: first
+            configuration:
+              id: 'views_block:article_by_category-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.category_page.full
+targetEntityType: node
+bundle: category_page
+mode: full
+content:
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

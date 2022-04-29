@@ -6,15 +6,18 @@ dependencies:
     - core.entity_view_mode.node.custom_exclusive_title_gt
     - field.field.node.article.body
     - field.field.node.article.field_custom_comments_field
-    - field.field.node.article.field_display_title
     - field.field.node.article.field_exclusive
     - field.field.node.article.field_global_tags
     - field.field.node.article.field_main_image
     - field.field.node.article.field_trending_tags
     - node.type.article
   module:
-    - title_field_for_manage_display
+    - layout_builder
     - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 _core:
   default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
 id: node.article.custom_exclusive_title_gt
@@ -22,16 +25,6 @@ targetEntityType: node
 bundle: article
 mode: custom_exclusive_title_gt
 content:
-  field_display_title:
-    type: title_value_field_formatter
-    label: hidden
-    settings:
-      tag: h4
-      linked: '1'
-      classes: ''
-    third_party_settings: {  }
-    weight: 1
-    region: content
   field_exclusive:
     type: boolean
     label: hidden
