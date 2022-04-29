@@ -12,7 +12,7 @@ dependencies:
 id: views_block__frontpage_content_main_content_blocks_block_1
 theme: bartik
 region: content
-weight: -10
+weight: -12
 provider: null
 plugin: 'views_block:frontpage_content_main_content_blocks-block_1'
 settings:

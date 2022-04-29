@@ -5,6 +5,6 @@ dependencies:
   module:
     - node
 id: node.custom_frontpage_content_img_tall_gt_tiltle
-label: 'Custom | Frontpage: Content: Img(Tall)->GT->Tiltle'
+label: 'Custom | Frontpage: Content: Img(Tall)->GT->Exclusive->Tiltle'
 targetEntityType: node
 cache: true

@@ -1,0 +1,15 @@
+uuid: 12ff39f9-c89a-4d81-bb16-d22f8dfcd9bf
+langcode: en
+status: true
+dependencies: {  }
+name: teaser_300x250
+label: 'Teaser 320x280'
+effects:
+  4cd422f1-035c-4d4b-9fe7-570dc7401081:
+    uuid: 4cd422f1-035c-4d4b-9fe7-570dc7401081
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 320
+      height: 280
+      anchor: center-center

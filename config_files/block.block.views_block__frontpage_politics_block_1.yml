@@ -1,0 +1,29 @@
+uuid: af23980b-ec14-4c09-b05f-24ad9a8669d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.frontpage_politics
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__frontpage_politics_block_1
+theme: bartik
+region: content
+weight: -10
+provider: null
+plugin: 'views_block:frontpage_politics-block_1'
+settings:
+  id: 'views_block:frontpage_politics-block_1'
+  label: Politics
+  label_display: visible
+  provider: views
+  views_label: Politics
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

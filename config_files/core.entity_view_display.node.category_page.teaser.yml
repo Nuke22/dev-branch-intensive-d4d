@@ -1,0 +1,22 @@
+uuid: 9c68a017-2449-4504-9997-956d5121f8ba
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.category_page.field_category
+    - node.type.category_page
+  module:
+    - user
+id: node.category_page.teaser
+targetEntityType: node
+bundle: category_page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_category: true

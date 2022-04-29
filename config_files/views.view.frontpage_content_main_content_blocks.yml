@@ -19,7 +19,7 @@ dependencies:
     - taxonomy
     - user
 id: frontpage_content_main_content_blocks
-label: 'Frontpage: Content: main content blocks'
+label: 'Frontpage: Breaking'
 module: views
 description: ''
 tag: ''
