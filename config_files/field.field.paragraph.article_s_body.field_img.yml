@@ -1,0 +1,21 @@
+uuid: 91a57510-978a-40a4-bb14-675e5dc038c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_img
+    - paragraphs.paragraphs_type.article_s_body
+id: paragraph.article_s_body.field_img
+field_name: field_img
+entity_type: paragraph
+bundle: article_s_body
+label: img
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings: {  }
+field_type: entity_reference
