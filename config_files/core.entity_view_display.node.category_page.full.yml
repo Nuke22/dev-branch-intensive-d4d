@@ -9,7 +9,12 @@ dependencies:
     - system.menu.menupage-menu
     - views.view.article_by_category
     - views.view.article_by_category_highlighted_top_
+    - views.view.menupage_popular_
+  content:
+    - 'block_content:image_only:806dd0a3-1c37-42aa-8a12-9bf36b2d3b46'
+    - 'block_content:link_only_block_type:49a48140-afd1-4993-8cde-58ac9fa8da57'
   module:
+    - block_content
     - layout_builder
     - layout_discovery
     - system
@@ -80,6 +85,47 @@ third_party_settings:
               views_label: ''
               items_per_page: none
             weight: 0
+            additional: {  }
+          f8f16db2-95a6-4529-bdd1-35fd078c3f4c:
+            uuid: f8f16db2-95a6-4529-bdd1-35fd078c3f4c
+            region: second
+            configuration:
+              id: 'views_block:menupage_popular_-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          294c2058-7eea-42fc-9bac-03c53f9aa77a:
+            uuid: 294c2058-7eea-42fc-9bac-03c53f9aa77a
+            region: second
+            configuration:
+              id: 'block_content:49a48140-afd1-4993-8cde-58ac9fa8da57'
+              label: 'Subscribe (header)'
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 2
+            additional: {  }
+          6cff5348-089c-48b9-a787-0a1b524c6bf4:
+            uuid: 6cff5348-089c-48b9-a787-0a1b524c6bf4
+            region: second
+            configuration:
+              id: 'block_content:806dd0a3-1c37-42aa-8a12-9bf36b2d3b46'
+              label: 'Newspaper theme'
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 3
             additional: {  }
         third_party_settings: {  }
 id: node.category_page.full
