@@ -2,3 +2,4 @@ name: My subtheme
 type: theme
 base theme: olivero
 description: 'My custom theme'
+core_version_requirement: '^8.9 || ^9'
