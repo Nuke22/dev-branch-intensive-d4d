@@ -1,0 +1,25 @@
+uuid: 840b5953-02a1-45bb-99d3-f2030e40ab33
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_only
+    - field.field.block_content.image_only.field_img
+    - image.style.tall_300x480
+  module:
+    - media
+id: block_content.image_only.default
+targetEntityType: block_content
+bundle: image_only
+mode: default
+content:
+  field_img:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: tall_300x480
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
