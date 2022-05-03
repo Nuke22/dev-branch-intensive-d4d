@@ -31,7 +31,6 @@
 /web/sites/example.settings.local.php
 /web/sites/development.services.yml
 /web/themes/README.txt
-/web/themes/contrib
 /vendor
 /web/.csslintrc
 /web/.editorconfig
@@ -52,4 +51,3 @@
 /.idea
 /.editorconfig
 /.gitattributes
-/web/libraries
