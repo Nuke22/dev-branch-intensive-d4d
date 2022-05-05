@@ -53,3 +53,4 @@
 /.editorconfig
 /.gitattributes
 /web/libraries
+/web/themes/custom/subtheme/dist
