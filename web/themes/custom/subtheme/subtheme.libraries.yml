@@ -1,0 +1,6 @@
+global-styling:
+  css:
+    theme:
+      dist/style.css: {}
+  js:
+    js/bundle.js: {}

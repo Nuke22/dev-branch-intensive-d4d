@@ -54,4 +54,4 @@
 /.gitattributes
 /web/libraries
 /web/themes/custom/subtheme/dist
-/node_modules
+/web/themes/custom/subtheme/node_modules
