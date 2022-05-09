@@ -1376,7 +1376,7 @@ display:
         - 'config:field.storage.node.field_global_tags'
   block_3:
     id: block_3
-    display_title: 'Right bot NewsBlock (featured bottom third)'
+    display_title: 'Right bot NewsBlock (featured bottom third) Marketing'
     display_plugin: block
     position: 3
     display_options:

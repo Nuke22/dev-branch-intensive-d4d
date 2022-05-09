@@ -215,8 +215,9 @@ display:
     id: attachment_1
     display_title: Attachment
     display_plugin: attachment
-    position: 2
+    position: 3
     display_options:
+      enabled: false
       pager:
         type: some
         options:
@@ -249,7 +250,48 @@ display:
       tags: {  }
   block_1:
     id: block_1
-    display_title: 'Exclusive content'
+    display_title: 'Exclusive content (big)'
+    display_plugin: block
+    position: 2
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      style:
+        type: grid
+        options:
+          grouping: {  }
+          columns: 2
+          automatic_width: true
+          alignment: horizontal
+          row_class_custom: ''
+          row_class_default: true
+          col_class_custom: ''
+          col_class_default: true
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: custom_frontpage_content_img_big_gt_tiltle_body_trim_
+      defaults:
+        pager: false
+        style: false
+        row: false
+      display_description: ''
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_2:
+    id: block_2
+    display_title: 'Exclusive content (small)'
     display_plugin: block
     position: 1
     display_options:

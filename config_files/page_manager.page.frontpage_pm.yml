@@ -1,0 +1,12 @@
+uuid: c3294a03-d310-4ca0-be56-c6cb5e980c56
+langcode: en
+status: true
+dependencies: {  }
+id: frontpage_pm
+label: 'Frontpage PM'
+description: 'Frontpage via page manager'
+use_admin_theme: false
+path: /frontpage
+access_logic: and
+access_conditions: {  }
+parameters: {  }
