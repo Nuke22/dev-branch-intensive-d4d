@@ -20,32 +20,6 @@ variant_settings:
         label: Header
         context_mapping: {  }
       components:
-        06a5c342-c79a-4b66-882b-d825fd5d8506:
-          uuid: 06a5c342-c79a-4b66-882b-d825fd5d8506
-          region: content
-          configuration:
-            id: search_form_block
-            label: 'Search form'
-            label_display: '0'
-            provider: search
-            context_mapping: {  }
-            page_id: ''
-          weight: 1
-          additional: {  }
-        931c1735-a1a1-4585-bbfc-084cab4bb667:
-          uuid: 931c1735-a1a1-4585-bbfc-084cab4bb667
-          region: content
-          configuration:
-            id: 'block_content:3970b319-ed8a-4fea-810d-d110bc3ac3d7'
-            label: 'Menu button (header)'
-            label_display: '0'
-            provider: block_content
-            status: true
-            info: ''
-            view_mode: full
-            context_mapping: {  }
-          weight: 0
-          additional: {  }
         e2607f27-9dfd-4d4f-8ed6-a06a969ebc2d:
           uuid: e2607f27-9dfd-4d4f-8ed6-a06a969ebc2d
           region: content
@@ -58,7 +32,7 @@ variant_settings:
             use_site_logo: false
             use_site_name: true
             use_site_slogan: false
-          weight: 2
+          weight: 4
           additional: {  }
         1e718487-d5dd-40f8-84f3-b449116f8f31:
           uuid: 1e718487-d5dd-40f8-84f3-b449116f8f31
@@ -72,7 +46,7 @@ variant_settings:
             info: ''
             view_mode: full
             context_mapping: {  }
-          weight: 3
+          weight: 5
           additional: {  }
         00da91ce-0c85-45df-8376-dbbab2362a85:
           uuid: 00da91ce-0c85-45df-8376-dbbab2362a85
@@ -86,7 +60,35 @@ variant_settings:
             info: ''
             view_mode: full
             context_mapping: {  }
-          weight: 4
+          weight: 6
+          additional: {  }
+        fdf0e3c8-2361-4a7a-bdbb-cb60c7c791c9:
+          uuid: fdf0e3c8-2361-4a7a-bdbb-cb60c7c791c9
+          region: content
+          configuration:
+            id: 'block_content:0e2bb2cc-7c2b-4297-a8e2-4bcb5d0f5760'
+            label: 'Menu (header)'
+            label_display: '0'
+            provider: block_content
+            status: true
+            info: ''
+            view_mode: full
+            context_mapping: {  }
+          weight: 2
+          additional: {  }
+        e37a378d-016c-4af4-8d09-b5a8bd436502:
+          uuid: e37a378d-016c-4af4-8d09-b5a8bd436502
+          region: content
+          configuration:
+            id: 'block_content:78e55047-af1e-407c-a69b-352101123886'
+            label: 'Search (header)'
+            label_display: '0'
+            provider: block_content
+            status: true
+            info: ''
+            view_mode: full
+            context_mapping: {  }
+          weight: 3
           additional: {  }
       third_party_settings: {  }
     -

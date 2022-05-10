@@ -1,0 +1,31 @@
+uuid: 58b15883-b79f-4863-9612-82cca247bf09
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_and_image
+    - field.field.block_content.text_and_image.field_text
+    - field.field.block_content.text_and_image.layout_builder__layout
+id: block_content.text_and_image.default
+targetEntityType: block_content
+bundle: text_and_image
+mode: default
+content:
+  field_text:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  layout_builder__layout: true

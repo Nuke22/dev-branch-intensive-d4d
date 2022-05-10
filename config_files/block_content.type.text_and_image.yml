@@ -1,0 +1,8 @@
+uuid: b5aed5dd-ae44-45bb-8a30-d4021360d4a3
+langcode: en
+status: true
+dependencies: {  }
+id: text_and_image
+label: 'Text (header)'
+revision: 0
+description: 'Like in header'
