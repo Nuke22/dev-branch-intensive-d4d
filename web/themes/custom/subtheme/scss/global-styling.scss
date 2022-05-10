@@ -1,0 +1,14 @@
+@import "./variables";
+
+a {
+  color: $base-color;
+  text-decoration: none;
+  font-size: map-get($font-size, "normal");
+  font-weight: map-get($font-weights, "bold");
+
+  &:hover {
+    color: $highlight-color;
+  }
+}
+
+
