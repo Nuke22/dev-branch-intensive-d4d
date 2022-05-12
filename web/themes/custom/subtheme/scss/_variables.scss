@@ -1,3 +1,5 @@
+// variables
+//
 $base-color: #000000;
 $highlight-color: #f43f3f;
 $exclusive-color: #ec3535;
@@ -5,7 +7,7 @@ $something: #fff;
 
 
 $font-weights: (
-  "regular": 400,
+  "regular": 200,
   "medium": 500,
   "bold": 700,
 );
@@ -15,3 +17,31 @@ $font-size: (
   "big": 1.6rem,
   "bigger": 2.5rem,
 );
+
+// functions
+//
+@function font-weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+@function font-size($size-name) {
+  @return map-get($font-size, $size-name)
+}
+
+
+// mixins
+//
+@mixin hoverColor ($color: $highlight-color){
+  &:hover{
+    color: $color;
+  }
+}
+
+@mixin addPlaceForIcon (){
+  content: "";
+  display: block;
+  position: relative;
+  margin: 0.25rem 0.5rem auto;
+  width: 1rem;
+  height: 1rem;
+}

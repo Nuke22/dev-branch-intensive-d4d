@@ -1,7 +1,45 @@
+@import "./variables";
+
 .layout__region--content {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  list-style: none;
   display: flex;
 }
 
-.block-field-blockblock-contenttext-and-imagefield-text{
+.menu--header-menu .menu--level-1 li{
+  margin: 0 10px;
+  span {
+    color: $base-color;
+    @include hoverColor();
+    }
 
+  &:nth-child(1){
+    display:flex;
+    &::after {
+      @include addPlaceForIcon();
+      background: url("../images/menu-icon.svg");
+    }
+  }
+  &:nth-child(2){
+    display: flex;
+    &::after {
+      @include addPlaceForIcon();
+      background: url("../images/search-icon.svg");
+    }
+  }
+  &:nth-child(3){
+    margin: 0 20%;
+    width: 10rem;
+  }
+  &:nth-child(4){
+
+  }
+  &:nth-child(5){
+    //position: absolute;
+    right: 0;
+  }
 }

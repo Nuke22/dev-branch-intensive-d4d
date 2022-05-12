@@ -1,14 +1,18 @@
 @import "./variables";
 
-a {
+* {
+  font-size: font-size("normal");
+  font-weight: font-weight("bold");
   color: $base-color;
   text-decoration: none;
-  font-size: map-get($font-size, "normal");
-  font-weight: map-get($font-weights, "bold");
+  margin: 0;
+  padding: 0;
+}
 
-  &:hover {
-    color: $highlight-color;
-  }
+
+a {
+  color: $base-color;
+  @include hoverColor();
 }
 
 
