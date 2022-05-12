@@ -9,13 +9,14 @@ $something: #fff;
 $font-weights: (
   "regular": 200,
   "medium": 500,
+  "medium+": 600,
   "bold": 700,
 );
 
 $font-size: (
   "normal": 0.8rem,
   "big": 1.6rem,
-  "bigger": 2.5rem,
+  "bigger": 2.6rem,
 );
 
 // functions
@@ -31,16 +32,15 @@ $font-size: (
 
 // mixins
 //
-@mixin hoverColor ($color: $highlight-color){
+@mixin hoverColor ($front-c: $highlight-color){
   &:hover{
-    color: $color;
+    color: $front-c;
   }
 }
 
 @mixin addPlaceForIcon (){
   content: "";
   display: block;
-  position: relative;
   margin: 0.25rem 0.5rem auto;
   width: 1rem;
   height: 1rem;
