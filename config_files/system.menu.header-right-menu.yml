@@ -1,0 +1,8 @@
+uuid: 1973cd3f-4f32-4b4a-8e5b-02c75d124c25
+langcode: en
+status: true
+dependencies: {  }
+id: header-right-menu
+label: 'Header | right menu'
+description: ''
+locked: false
