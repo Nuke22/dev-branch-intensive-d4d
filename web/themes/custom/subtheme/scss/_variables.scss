@@ -14,9 +14,11 @@ $font-weights: (
 );
 
 $font-size: (
-  "normal": 0.8rem,
-  "big": 1.6rem,
-  "bigger": 2.6rem,
+  "normal": 0.8rem, // 14px
+  "big": 1.6rem, //25px
+  "bigger": 2.6rem, //42px
+  "top-logo": 70px,
+  "top-sup": 12px
 );
 
 // functions

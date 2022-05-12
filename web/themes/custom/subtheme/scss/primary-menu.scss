@@ -1,0 +1,11 @@
+@import "./variables";
+
+.primary-nav {
+  width: 80%;
+  margin: 0 auto;
+  & ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
