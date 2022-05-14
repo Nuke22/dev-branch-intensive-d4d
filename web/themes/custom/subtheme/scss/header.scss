@@ -1,5 +1,7 @@
 @import "./variables";
-.layout--onecol {
+
+
+.custom-header {
   width: 100%;
   & .layout__region--content {
     width: 100%;
@@ -79,7 +81,7 @@
 
 // main logo styling
 
-.logo-main {
+.custom-logo {
   position: relative;
 
 
