@@ -1,0 +1,14 @@
+@import "variables";
+
+.custom-fp-highlighted {
+  width: 90%;
+  margin: 0 auto;
+
+  .views-view-grid--vertical {
+    font-size: font-size("small");
+    font-weight: font-weight("regular");
+    &:first-child h2{
+      margin: 0;
+    }
+  }
+}
