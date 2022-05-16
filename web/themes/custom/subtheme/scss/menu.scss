@@ -13,7 +13,7 @@
 }
 
 .custom-pages-name .field-content {
-  font-size: font-size("bigger");
+  font-size: $font-size-bigger;
 
   @include centrify;
 }
@@ -27,7 +27,7 @@
     justify-content: space-between;
 
     li a {
-      font-size: font-size("normal+");
+      font-size: $font-size-normal-plus;
     }
   }
 }

@@ -1,33 +1,30 @@
 // variables
 
+:root {
+  --main-bg-color: brown;
+}
+
 $base-color: #000;
 $highlight-color: #f43f3f;
 $exclusive-color: #ec3535;
 $something: #fff;
-$font-weights: (
-  "regular": 200,
-  "medium": 500,
-  "medium+": 600,
-  "bold": 700,
-);
-$font-size: (
-  "normal": 0.8rem, // 14px
-  "normal+": 0.9rem,
-  "big": 1.6rem,    // 25px
-  "bigger": 2.6rem, // 42px
-  "top-logo": 70px,
-  "top-sup": 12px
-);
 
-// functions
+// font weights
 
-@function font-weight($weight-name) {
-  @return map-get($font-weights, $weight-name);
-}
+$font-weight-regular: 200;
+$font-weight-medium: 500;
+$font-weight-medium-plus: 600;
+$font-weight-bold: 700;
 
-@function font-size($size-name) {
-  @return map-get($font-size, $size-name);
-}
+// font sixe
+
+$font-size-small: 0.65rem;  // 10px
+$font-size-normal: 0.8rem; // 14px
+$font-size-normal-plus: 0.9rem; // 15px
+$font-size-big: 1.6rem;    // 25px
+$font-size-bigger: 2.6rem; // 42px
+$font-size-top-logo: 70px;
+$font-size-top-sup: 12px;
 
 // mixins
 
