@@ -1,0 +1,8 @@
+uuid: 52118c10-5d91-4100-a743-d5bc089271c2
+langcode: en
+status: true
+dependencies: {  }
+id: global_static_block
+label: 'Global static block'
+revision: 0
+description: 'use this block for stuff that does not change ( header footer etc)'

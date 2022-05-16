@@ -5,10 +5,14 @@ dependencies:
   config:
     - field.field.node.category_page.field_category
     - node.type.category_page
+    - system.menu.main
+    - system.menu.menupage-menu
     - views.view.article_by_category
+    - views.view.menupage_page_s_name
   module:
     - layout_builder
     - layout_discovery
+    - system
     - user
     - views
 third_party_settings:
@@ -16,6 +20,83 @@ third_party_settings:
     enabled: true
     allow_custom: false
     sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Header
+          context_mapping: {  }
+          layout_builder_styles_style:
+            - custom_header
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'main navigation'
+          context_mapping: {  }
+          layout_builder_styles_style: {  }
+        components:
+          6a738e35-48d5-4349-9f14-9f441bb72e43:
+            uuid: 6a738e35-48d5-4349-9f14-9f441bb72e43
+            region: content
+            configuration:
+              id: 'system_menu_block:main'
+              label: 'Main navigation'
+              label_display: '0'
+              provider: system
+              context_mapping: {  }
+              level: 1
+              depth: 0
+              expand_all_items: false
+            weight: 0
+            additional:
+              layout_builder_styles_style: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Menupage: category'
+          context_mapping: {  }
+          layout_builder_styles_style: {  }
+        components:
+          e2159693-8dee-4ad8-af67-dda4ce9c66a1:
+            uuid: e2159693-8dee-4ad8-af67-dda4ce9c66a1
+            region: content
+            configuration:
+              id: 'views_block:menupage_page_s_name-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional:
+              layout_builder_styles_style: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'menupage : menu'
+          context_mapping: {  }
+          layout_builder_styles_style: {  }
+        components:
+          b87079e0-9bf2-4a3a-9552-6f33f32180c0:
+            uuid: b87079e0-9bf2-4a3a-9552-6f33f32180c0
+            region: content
+            configuration:
+              id: 'system_menu_block:menupage-menu'
+              label: 'Menupage: menu'
+              label_display: '0'
+              provider: system
+              context_mapping: {  }
+              level: 1
+              depth: 0
+              expand_all_items: false
+            weight: 0
+            additional:
+              layout_builder_styles_style: {  }
+        third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:

@@ -1,0 +1,11 @@
+uuid: 60f6efd5-fe44-4802-b077-ce15443664e7
+langcode: en
+status: true
+dependencies: {  }
+id: menupage_page_s_name
+label: 'Menupage: page''s name'
+classes: custom-pages-name
+type: component
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

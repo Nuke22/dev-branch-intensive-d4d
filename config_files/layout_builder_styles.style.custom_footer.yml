@@ -1,0 +1,11 @@
+uuid: 25a26e85-5375-467f-8c59-a122e66674de
+langcode: en
+status: true
+dependencies: {  }
+id: custom_footer
+label: 'Custom Footer'
+classes: Custom-footer
+type: section
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

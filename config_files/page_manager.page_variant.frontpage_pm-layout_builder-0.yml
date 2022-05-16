@@ -19,6 +19,8 @@ variant_settings:
       layout_settings:
         label: Header
         context_mapping: {  }
+        layout_builder_styles_style:
+          - custom_header
       components:
         c167d845-a589-4148-a061-bfad4aa07c95:
           uuid: c167d845-a589-4148-a061-bfad4aa07c95
@@ -33,7 +35,23 @@ variant_settings:
             depth: 0
             expand_all_items: false
           weight: 0
-          additional: {  }
+          additional:
+            component_attributes:
+              block_attributes:
+                id: ''
+                class: wrapper-class1-custome
+                style: ''
+                data: ''
+              block_title_attributes:
+                id: ''
+                class: title-class2-custome
+                style: ''
+                data: ''
+              block_content_attributes:
+                id: ''
+                class: header
+                style: ''
+                data: ''
         19e9202f-a006-4cd2-83e5-b928ab2d8e84:
           uuid: 19e9202f-a006-4cd2-83e5-b928ab2d8e84
           region: content
@@ -47,7 +65,25 @@ variant_settings:
             view_mode: full
             context_mapping: {  }
           weight: 1
-          additional: {  }
+          additional:
+            component_attributes:
+              block_attributes:
+                id: ''
+                class: 'header logo logo-main'
+                style: ''
+                data: ''
+              block_title_attributes:
+                id: ''
+                class: ''
+                style: ''
+                data: ''
+              block_content_attributes:
+                id: ''
+                class: ''
+                style: ''
+                data: ''
+            layout_builder_styles_style:
+              - logo
         7a39bfe9-e498-47f9-826d-a2d5b67e59d9:
           uuid: 7a39bfe9-e498-47f9-826d-a2d5b67e59d9
           region: content
@@ -61,7 +97,23 @@ variant_settings:
             depth: 0
             expand_all_items: false
           weight: 2
-          additional: {  }
+          additional:
+            component_attributes:
+              block_attributes:
+                id: ''
+                class: header
+                style: ''
+                data: ''
+              block_title_attributes:
+                id: ''
+                class: ''
+                style: ''
+                data: ''
+              block_content_attributes:
+                id: ''
+                class: ''
+                style: ''
+                data: ''
       third_party_settings: {  }
     -
       layout_id: layout_onecol
@@ -82,7 +134,23 @@ variant_settings:
             depth: 0
             expand_all_items: false
           weight: 0
-          additional: {  }
+          additional:
+            component_attributes:
+              block_attributes:
+                id: ''
+                class: primary-menu
+                style: ''
+                data: ''
+              block_title_attributes:
+                id: ''
+                class: ''
+                style: ''
+                data: ''
+              block_content_attributes:
+                id: ''
+                class: ''
+                style: ''
+                data: ''
       third_party_settings: {  }
     -
       layout_id: layout_onecol

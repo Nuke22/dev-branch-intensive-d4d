@@ -17,7 +17,6 @@ dependencies:
     - views.view.nodepage_sidebar_popular_
   content:
     - 'block_content:image_only:806dd0a3-1c37-42aa-8a12-9bf36b2d3b46'
-    - 'block_content:link_only_block_type:49a48140-afd1-4993-8cde-58ac9fa8da57'
   module:
     - block_content
     - comment
