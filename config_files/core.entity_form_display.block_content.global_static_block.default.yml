@@ -1,0 +1,22 @@
+uuid: 1a320e5c-3d48-41c3-bd37-d6cc924bbd47
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.global_static_block
+    - field.field.block_content.global_static_block.layout_builder__layout
+id: block_content.global_static_block.default
+targetEntityType: block_content
+bundle: global_static_block
+mode: default
+content:
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  layout_builder__layout: true

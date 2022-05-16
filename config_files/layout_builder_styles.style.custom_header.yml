@@ -1,0 +1,11 @@
+uuid: eac766b0-5891-4ea3-b509-4cd7d1345302
+langcode: en
+status: true
+dependencies: {  }
+id: custom_header
+label: 'Custom Header'
+classes: custom-header
+type: section
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

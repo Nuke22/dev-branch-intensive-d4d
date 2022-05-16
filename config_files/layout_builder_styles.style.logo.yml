@@ -1,0 +1,11 @@
+uuid: aa89d06d-5f08-4327-a3b3-4e4729716481
+langcode: en
+status: true
+dependencies: {  }
+id: logo
+label: Logo
+classes: custom-logo
+type: component
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

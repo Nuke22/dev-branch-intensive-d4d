@@ -1,0 +1,11 @@
+uuid: 09afb7bf-9389-4e73-b9a3-42922d460d3b
+langcode: en
+status: true
+dependencies: {  }
+id: menupage_secondary_menu
+label: 'Menupage: secondary menu'
+classes: custom-secondary-menu
+type: component
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0
