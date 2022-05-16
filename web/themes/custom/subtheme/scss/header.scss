@@ -20,7 +20,6 @@
   margin: 0 10px;     // this is for space between neighbors
   display: flex;
 
-
   span {
     color: $base-color;
 
@@ -52,15 +51,15 @@
   position: relative;
 
   p a {
-    font-weight: font-weight("bold");
+    font-weight: $font-weight-bold;
     line-height: 1.2;
-    font-size: font-size("top-logo");
+    font-size: $font-size-top-logo;
     white-space: nowrap;
     color: $exclusive-color;
 
     & sup {
       font-style: italic;
-      font-size: font-size("top-sup");
+      font-size: $font-size-top-sup;
       color: $base-color;
       position: absolute;
       top: 10px;
@@ -107,7 +106,7 @@
       & a {
         padding: 8px 12px;
         color: white;
-        font-weight: font-weight("medioum+");
+        font-weight: $font-weight-medium-plus;
       }
     }
   }
