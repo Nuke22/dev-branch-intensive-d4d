@@ -1,9 +1,9 @@
 @import "./variables";
 
-
 .custom-header {
   width: 100%;
-  & .layout__region--content {
+
+  .layout__region--content {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -11,70 +11,37 @@
   }
 }
 
-
 .menu {
   list-style: none;
   display: flex;
 }
 
-.menu--header-left-menu .menu--level-1 li{  //menu & search elements
+.menu--header-left-menu .menu--level-1 li {  // menu & search elements
   margin: 0 10px;     // this is for space between neighbors
-  display:flex;
+  display: flex;
+
+
   span {
     color: $base-color;
-    @include hoverColor();
-    }
 
-  &:first-child{      //menu
+    @include hover-color;
+  }
+
+  &:first-child {      // menu
     &::after {
-      @include addPlaceForIcon();
+      @include add-place-for-icon;
+
       background: url("../images/menu-icon.svg");
       background-size: contain;
     }
   }
-  &:last-child{       //search
+
+  &:last-child {       // search
     &::after {
-      @include addPlaceForIcon();
+      @include add-place-for-icon;
+
       background: url("../images/search-icon.svg");
       background-size: contain;
-    }
-  }
-}
-
-.menu--header-right-menu .menu--level-1 {   //my account & subscribe elements
-  align-items: center;
-  & li {
-    margin: 0 10px; // this is for space between neighbors
-    display: flex;
-
-    span {
-      color: $base-color;
-      @include hoverColor();
-    }
-
-    &:first-child {       //my account
-      white-space: nowrap;
-      &::before {
-        @include addPlaceForIcon();
-        background: url("../images/person-cropped.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
-    }
-
-    &:last-child {          //subscribe
-      background-color: $exclusive-color;
-      border-radius: 5px;
-      &:hover {
-        background-color: $base-color;
-      }
-
-      & a {
-        padding: 8px 12px;
-        color: white;
-        font-weight: font-weight('medioum+');
-
-      }
     }
   }
 }
@@ -84,14 +51,13 @@
 .custom-logo {
   position: relative;
 
-
-  & p {
-    //font-style: italic;
+  p a {
     font-weight: font-weight("bold");
     line-height: 1.2;
     font-size: font-size("top-logo");
     white-space: nowrap;
     color: $exclusive-color;
+
     & sup {
       font-style: italic;
       font-size: font-size("top-sup");
@@ -103,3 +69,46 @@
   }
 }
 
+.menu--header-right-menu .menu--level-1 {   // my account & subscribe elements
+  align-items: center;
+  padding: 0;
+  padding-inline-end: 40px;
+
+  li {
+    margin: 0 10px; // this is for space between neighbors
+    display: flex;
+
+    span {
+      color: $base-color;
+
+      @include hover-color;
+    }
+
+    &:first-child {       // my account
+      white-space: nowrap;
+
+      &::before {
+        @include add-place-for-icon;
+
+        background: url("../images/person-cropped.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:last-child {          // subscribe
+      background-color: $exclusive-color;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: $base-color;
+      }
+
+      & a {
+        padding: 8px 12px;
+        color: white;
+        font-weight: font-weight("medioum+");
+      }
+    }
+  }
+}

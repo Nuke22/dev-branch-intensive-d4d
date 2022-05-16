@@ -1,49 +1,51 @@
 // variables
-//
-$base-color: #000000;
+
+$base-color: #000;
 $highlight-color: #f43f3f;
 $exclusive-color: #ec3535;
 $something: #fff;
-
-
 $font-weights: (
   "regular": 200,
   "medium": 500,
   "medium+": 600,
   "bold": 700,
 );
-
 $font-size: (
   "normal": 0.8rem, // 14px
-  "big": 1.6rem, //25px
-  "bigger": 2.6rem, //42px
+  "normal+": 0.9rem,
+  "big": 1.6rem,    // 25px
+  "bigger": 2.6rem, // 42px
   "top-logo": 70px,
   "top-sup": 12px
 );
 
 // functions
-//
+
 @function font-weight($weight-name) {
   @return map-get($font-weights, $weight-name);
 }
 
 @function font-size($size-name) {
-  @return map-get($font-size, $size-name)
+  @return map-get($font-size, $size-name);
 }
 
-
 // mixins
-//
-@mixin hoverColor ($front-c: $highlight-color){
-  &:hover{
+
+@mixin hover-color($front-c: $highlight-color) {
+  &:hover {
     color: $front-c;
   }
 }
 
-@mixin addPlaceForIcon (){
+@mixin add-place-for-icon() {
   content: "";
   display: block;
-  margin: 0.25rem 0.5rem auto;
+  margin: 0 0.5rem;
   width: 1rem;
   height: 1rem;
+}
+
+@mixin centrify() {
+  display: flex;
+  justify-content: center;
 }
