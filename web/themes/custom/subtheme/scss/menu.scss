@@ -1,0 +1,33 @@
+@import "./variables";
+
+.primary-nav {
+  width: 42rem;
+  margin: 0 auto;
+
+  & ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.custom-pages-name .field-content {
+  font-size: font-size("bigger");
+
+  @include centrify;
+}
+
+.custom-secondary-menu {
+  @include centrify;
+
+  ul {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+
+    li a {
+      font-size: font-size("normal+");
+    }
+  }
+}

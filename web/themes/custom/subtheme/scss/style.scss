@@ -1,4 +1,3 @@
-$test: yellow;
-.menu__link{
-  color: red;
-}
+@import "global-styling";
+@import "header";
+@import "menu";
