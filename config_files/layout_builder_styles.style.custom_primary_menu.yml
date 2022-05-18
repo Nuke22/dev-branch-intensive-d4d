@@ -1,0 +1,11 @@
+uuid: 560df614-bd93-4819-aea4-15371dcca17a
+langcode: en
+status: true
+dependencies: {  }
+id: custom_primary_menu
+label: 'Custom primary menu'
+classes: custom-primary-menu
+type: section
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0
