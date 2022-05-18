@@ -1,9 +1,5 @@
 // variables
 
-:root {
-  --main-bg-color: brown;
-}
-
 $base-color: #000;
 $highlight-color: #f43f3f;
 $exclusive-color: #ec3535;
@@ -16,15 +12,21 @@ $font-weight-medium: 500;
 $font-weight-medium-plus: 600;
 $font-weight-bold: 700;
 
-// font sixe
+// font size
 
 $font-size-small: 0.65rem;  // 10px
-$font-size-normal: 0.8rem; // 14px
+$font-size-normal-minus: 0.813rem; // 13px
+$font-size-normal: 0.875rem; // 14px
 $font-size-normal-plus: 0.9rem; // 15px
 $font-size-big: 1.6rem;    // 25px
 $font-size-bigger: 2.6rem; // 42px
 $font-size-top-logo: 70px;
 $font-size-top-sup: 12px;
+
+// media sizes (max width)
+
+$breakpoint1: 1000px;
+$breakpoint2: 850px;
 
 // mixins
 
