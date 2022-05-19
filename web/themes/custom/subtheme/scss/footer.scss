@@ -22,6 +22,16 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
 
+    @media (max-width: $breakpoint2) {      // adaptive for footer
+      & {
+        flex-direction: column;
+      }
+
+      & > div {
+        padding: 2rem 0 !important;
+      }
+    }
+
     & > div {
       padding: 0 1.6rem;
       max-width: 355px;
@@ -53,15 +63,4 @@ footer {
   .custom-footer-content > div:last-child > .layout__region--content {
     @include centrify;
   }
-
-
-
-
-
-
-
-
-
-
-
 }
