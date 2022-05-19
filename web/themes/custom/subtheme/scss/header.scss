@@ -10,6 +10,7 @@ custom-header
           span:after             p: a, sup
 */
 .custom-header {
+
   width: 100%;
   margin: 0 auto;
 
@@ -124,9 +125,16 @@ custom-header
 }
 
 @media (max-width: $breakpoint2) {
+  .custom-header {
+    position: sticky;
+    top: 60px;
+  }
   .custom-header > .layout__region--content {
     justify-content: center;
     margin-top: 1.6rem;
+    height: 50px;
+    padding: 10px 0;
+
 
     .menu--header-left-menu {
       width: 100%;
