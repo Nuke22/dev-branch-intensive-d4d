@@ -1,0 +1,8 @@
+uuid: e37e2f5f-fd62-4c19-a930-df6d90c70ccc
+langcode: en
+status: true
+dependencies: {  }
+id: font_awesome_test
+label: 'Font Awesome test'
+revision: 0
+description: ''

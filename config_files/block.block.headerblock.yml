@@ -1,0 +1,25 @@
+uuid: 997473eb-4caa-4cee-a490-f4370ece1da4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:header:77cc2608-582d-4b2e-a386-dea0ffea2dde'
+  module:
+    - block_content
+  theme:
+    - subtheme
+id: headerblock
+theme: subtheme
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:77cc2608-582d-4b2e-a386-dea0ffea2dde'
+settings:
+  id: 'block_content:77cc2608-582d-4b2e-a386-dea0ffea2dde'
+  label: 'Header block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

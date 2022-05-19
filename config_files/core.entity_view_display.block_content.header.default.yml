@@ -1,0 +1,103 @@
+uuid: c4417916-7f8b-40a5-b6bc-0f58454bef84
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.header
+    - system.menu.header-left-menu
+    - system.menu.header-right-menu
+    - system.menu.main
+  content:
+    - 'block_content:logo_block_type:66b1c194-403a-43f3-8a34-13659da3c11f'
+  module:
+    - block_content
+    - layout_builder
+    - layout_discovery
+    - system
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Header
+          context_mapping: {  }
+          layout_builder_styles_style: custom_header
+        components:
+          d6bcd57c-4f77-4c25-a1d1-8c6f3f23c9f8:
+            uuid: d6bcd57c-4f77-4c25-a1d1-8c6f3f23c9f8
+            region: content
+            configuration:
+              id: 'system_menu_block:header-left-menu'
+              label: 'Header | left menu'
+              label_display: '0'
+              provider: system
+              context_mapping: {  }
+              level: 1
+              depth: 0
+              expand_all_items: false
+            weight: 0
+            additional:
+              layout_builder_styles_style: ''
+          06428060-240c-422e-ae4f-89528f7b5c54:
+            uuid: 06428060-240c-422e-ae4f-89528f7b5c54
+            region: content
+            configuration:
+              id: 'block_content:66b1c194-403a-43f3-8a34-13659da3c11f'
+              label: 'Logo | News Week MAIN'
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 1
+            additional:
+              layout_builder_styles_style: logo
+          f834b5c2-916d-4636-8507-1952c0c747b5:
+            uuid: f834b5c2-916d-4636-8507-1952c0c747b5
+            region: content
+            configuration:
+              id: 'system_menu_block:header-right-menu'
+              label: 'Header | right menu'
+              label_display: '0'
+              provider: system
+              context_mapping: {  }
+              level: 1
+              depth: 0
+              expand_all_items: false
+            weight: 2
+            additional:
+              layout_builder_styles_style: ''
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Primary menu'
+          context_mapping: {  }
+          layout_builder_styles_style: custom_primary_menu
+        components:
+          0fee4976-72a0-4cd2-8852-d31945fe12e4:
+            uuid: 0fee4976-72a0-4cd2-8852-d31945fe12e4
+            region: content
+            configuration:
+              id: 'system_menu_block:main'
+              label: 'Main navigation'
+              label_display: '0'
+              provider: system
+              context_mapping: {  }
+              level: 1
+              depth: 0
+              expand_all_items: false
+            weight: 0
+            additional:
+              layout_builder_styles_style: ''
+        third_party_settings: {  }
+id: block_content.header.default
+targetEntityType: block_content
+bundle: header
+mode: default
+content: {  }
+hidden: {  }
