@@ -293,6 +293,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: views-custom-random-nodes
       use_ajax: true
       header: {  }
       footer: {  }

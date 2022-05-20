@@ -12,22 +12,34 @@
   }
 }
 
-.custom-pages-name .field-content {
+.custom-pages-name .field-content {   // Menupage: page's name
   font-size: $font-size-bigger;
 
   @include centrify;
 }
 
-.custom-secondary-menu {
+.custom-secondary-menu {    // Menupage: secondary menu (mini)
   @include centrify;
+
 
   ul {
     width: 45%;
+    max-width: 450px;
+    min-width: 350px;
     display: flex;
     justify-content: space-between;
+    padding-inline-start: 0;
 
     li a {
       font-size: $font-size-normal-plus;
     }
+  }
+}
+
+// adaptive
+
+@media (max-width: $breakpoint2) {
+  .primary-nav {
+    display: none;
   }
 }

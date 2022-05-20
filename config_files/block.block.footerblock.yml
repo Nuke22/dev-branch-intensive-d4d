@@ -1,0 +1,31 @@
+uuid: 0365365f-df0f-4fe6-abac-bfb1309f9d0a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer:5476462f-cbc4-4108-b380-1bfe7b0f3780'
+  module:
+    - block_classes
+    - block_content
+  theme:
+    - subtheme
+third_party_settings:
+  block_classes:
+    title_class: custom-footer-title
+    content_class: custom-footer-content
+    block_class: Custom-footer-block
+id: footerblock
+theme: subtheme
+region: footer_top
+weight: 0
+provider: null
+plugin: 'block_content:5476462f-cbc4-4108-b380-1bfe7b0f3780'
+settings:
+  id: 'block_content:5476462f-cbc4-4108-b380-1bfe7b0f3780'
+  label: 'Footer block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

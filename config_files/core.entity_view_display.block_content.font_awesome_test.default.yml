@@ -1,0 +1,32 @@
+uuid: a6e88708-ae78-4351-a724-a33968c141d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.font_awesome_test
+    - field.field.block_content.font_awesome_test.body
+    - field.field.block_content.font_awesome_test.field_icon
+  module:
+    - fontawesome
+    - text
+id: block_content.font_awesome_test.default
+targetEntityType: block_content
+bundle: font_awesome_test
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_icon:
+    type: fontawesome_icon_formatter
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

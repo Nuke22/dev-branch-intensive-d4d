@@ -1,0 +1,66 @@
+@import "./variables";
+
+footer {
+  // .custom-footer-content  - deepest parent for footer
+
+  .custom-footer-content > div:first-child > .layout__region--content {   // parent for logo and menu
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > .custom-logo > div > div > p > a {    // footer logo
+      color: black;
+    }
+
+    & > nav {   // footer menu
+      margin-right: 0;
+    }
+  }
+
+  .custom-footer-content > div:nth-child(2) > .layout__region--content {    // parent for 4 blocks
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media (max-width: $breakpoint2) {      // adaptive for footer
+      & {
+        flex-direction: column;
+      }
+
+      & > div {
+        padding: 2rem 0 !important;
+      }
+    }
+
+    & > div {
+      padding: 0 1.6rem;
+      max-width: 355px;
+
+      &:first-child {     // About Us
+        padding-left: 0;
+
+        .block__content > .field--name-field-icon .fontawesome-icons {
+          display: flex;
+          justify-content: flex-start;
+          gap: 10px;
+        }
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }                   // Subscribe
+
+      .block__title {                 // params for ALL 4 titles
+        font-size: $font-size-big;
+      }
+
+      .block__content {               // params for ALL 4 contents
+        font-size: $font-size-normal-plus;
+      }
+    }
+  }
+
+  .custom-footer-content > div:last-child > .layout__region--content {
+    @include centrify;
+  }
+}

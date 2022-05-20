@@ -1,0 +1,21 @@
+uuid: 11764711-5252-49aa-af1e-94577b7c6a5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.font_awesome_test
+    - field.storage.block_content.field_icon
+  module:
+    - fontawesome
+id: block_content.font_awesome_test.field_icon
+field_name: field_icon
+entity_type: block_content
+bundle: font_awesome_test
+label: Icon
+description: 'Pick any icons with Font Awesome'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

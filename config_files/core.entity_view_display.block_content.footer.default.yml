@@ -1,0 +1,159 @@
+uuid: ca985389-8c45-4aba-bff3-3aa143c7ce67
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - system.menu.main
+    - views.view.third_footer_block_view
+  content:
+    - 'block_content:basic:8a71cf9a-4829-4ca4-b48d-805cb971b00f'
+    - 'block_content:block_for_side_news_with_descrip:fc984b35-f87d-45f2-83b3-9bb816b65825'
+    - 'block_content:font_awesome_test:168cfaa2-ae94-429f-9be0-03deda1b3c61'
+    - 'block_content:logo_block_type:66b1c194-403a-43f3-8a34-13659da3c11f'
+    - 'block_content:subscribe_block_type:5f60b914-437a-43a1-9031-7fe4f9bf2abd'
+  module:
+    - block_content
+    - layout_builder
+    - layout_discovery
+    - system
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Logo and menu'
+          context_mapping: {  }
+          layout_builder_styles_style: ''
+        components:
+          05ef8ed3-26fa-4ac9-9fad-41b1dbe49404:
+            uuid: 05ef8ed3-26fa-4ac9-9fad-41b1dbe49404
+            region: content
+            configuration:
+              id: 'block_content:66b1c194-403a-43f3-8a34-13659da3c11f'
+              label: 'Logo | News Week MAIN'
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 0
+            additional:
+              layout_builder_styles_style: logo
+          fa404f39-c5dc-4ce3-afdb-1e15df0861e2:
+            uuid: fa404f39-c5dc-4ce3-afdb-1e15df0861e2
+            region: content
+            configuration:
+              id: 'system_menu_block:main'
+              label: 'Main navigation'
+              label_display: '0'
+              provider: system
+              context_mapping: {  }
+              level: 1
+              depth: 0
+              expand_all_items: false
+            weight: 1
+            additional:
+              layout_builder_styles_style: ''
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: '4 blocks'
+          context_mapping: {  }
+          layout_builder_styles_style: ''
+        components:
+          07ebc91f-24d7-4d4f-9ef1-d9fc58893360:
+            uuid: 07ebc91f-24d7-4d4f-9ef1-d9fc58893360
+            region: content
+            configuration:
+              id: 'block_content:fc984b35-f87d-45f2-83b3-9bb816b65825'
+              label: Company
+              label_display: visible
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 2
+            additional:
+              layout_builder_styles_style: ''
+          f41be61c-8af7-4828-9ec6-15d2008cb067:
+            uuid: f41be61c-8af7-4828-9ec6-15d2008cb067
+            region: content
+            configuration:
+              id: 'views_block:third_footer_block_view-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 3
+            additional:
+              layout_builder_styles_style: ''
+          4646be3c-8ec8-4e84-89ec-a9626b306c20:
+            uuid: 4646be3c-8ec8-4e84-89ec-a9626b306c20
+            region: content
+            configuration:
+              id: 'block_content:168cfaa2-ae94-429f-9be0-03deda1b3c61'
+              label: 'About us'
+              label_display: visible
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 1
+            additional:
+              layout_builder_styles_style: ''
+          5a5924d7-5222-4586-9527-a26fac843c4c:
+            uuid: 5a5924d7-5222-4586-9527-a26fac843c4c
+            region: content
+            configuration:
+              id: 'block_content:5f60b914-437a-43a1-9031-7fe4f9bf2abd'
+              label: Subscribe
+              label_display: visible
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 4
+            additional:
+              layout_builder_styles_style: ''
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Credits
+          context_mapping: {  }
+          layout_builder_styles_style: ''
+        components:
+          82e674bc-d5df-40b4-91d2-bad97358fefd:
+            uuid: 82e674bc-d5df-40b4-91d2-bad97358fefd
+            region: content
+            configuration:
+              id: 'block_content:8a71cf9a-4829-4ca4-b48d-805cb971b00f'
+              label: 'New Credits'
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 0
+            additional:
+              layout_builder_styles_style: ''
+        third_party_settings: {  }
+id: block_content.footer.default
+targetEntityType: block_content
+bundle: footer
+mode: default
+content: {  }
+hidden: {  }
