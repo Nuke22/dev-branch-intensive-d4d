@@ -1,0 +1,10 @@
+uuid: 6b028918-7c66-47d6-a3bc-ccc8e487b56b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.aaa_test
+label: AAA-Test
+targetEntityType: node
+cache: true

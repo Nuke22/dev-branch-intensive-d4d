@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.field_body_via_paragraphs
     - field.field.node.article.field_custom_comments_field
+    - field.field.node.article.field_display_title
     - field.field.node.article.field_exclusive
     - field.field.node.article.field_global_tags
     - field.field.node.article.field_main_image
@@ -14,9 +15,97 @@ dependencies:
     - image.style.large
     - node.type.article
   module:
+    - layout_builder
+    - layout_discovery
     - media
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          681c1aee-a8d1-4d0c-bd5a-cfa3fb1b7636:
+            uuid: 681c1aee-a8d1-4d0c-bd5a-cfa3fb1b7636
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_main_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: large
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          0b1ca8a6-221e-4fdb-9dea-fcdb8d68d755:
+            uuid: 0b1ca8a6-221e-4fdb-9dea-fcdb8d68d755
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_global_tags'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          583c2c82-4955-405d-a0e2-e5f4c161b6b6:
+            uuid: 583c2c82-4955-405d-a0e2-e5f4c161b6b6
+            region: content
+            configuration:
+              id: 'field_block:node:article:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 150
+                third_party_settings: {  }
+            weight: 3
+            additional:
+              layout_builder_styles_style: ''
+          50858410-0b6d-41d7-b2a7-941948684921:
+            uuid: 50858410-0b6d-41d7-b2a7-941948684921
+            region: content
+            configuration:
+              id: 'field_block:node:article:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: title_value_field_formatter
+                label: hidden
+                settings:
+                  tag: h2
+                  linked: 1
+                  classes: ''
+                third_party_settings: {  }
+            weight: 2
+            additional:
+              layout_builder_styles_style: ''
+        third_party_settings: {  }
 _core:
   default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
 id: node.article.custom_frontpage_content_img_big_gt_tiltle_body_trim_
@@ -52,6 +141,7 @@ content:
 hidden:
   field_body_via_paragraphs: true
   field_custom_comments_field: true
+  field_display_title: true
   field_exclusive: true
   field_trending_tags: true
   links: true

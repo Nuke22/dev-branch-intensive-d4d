@@ -1,0 +1,15 @@
+uuid: e4336cf5-c657-4b2b-9dbc-ab23d393b5e0
+langcode: en
+status: true
+dependencies: {  }
+name: user_icon_20x20_
+label: 'User icon (20x20)'
+effects:
+  1c7c901f-0ba3-4419-89eb-5515e80bce66:
+    uuid: 1c7c901f-0ba3-4419-89eb-5515e80bce66
+    id: image_scale
+    weight: 1
+    data:
+      width: 20
+      height: 20
+      upscale: false

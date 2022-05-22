@@ -1,0 +1,12 @@
+uuid: 994eeb5d-7305-41e5-8013-3970a2711aab
+langcode: en
+status: true
+dependencies: {  }
+id: custom_article_teaser
+label: 'Custom article teaser'
+classes: custom-article-teaser
+type: section
+block_restrictions: {  }
+layout_restrictions:
+  - layout_twocol_section
+weight: 0
