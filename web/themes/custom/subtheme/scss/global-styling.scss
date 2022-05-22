@@ -17,3 +17,10 @@ a {
 
   text-decoration: none;
 }
+
+.custom-exclusive-and-title {
+  margin-bottom: 1rem;
+  & > .layout__region--content > .block-field-blocknodearticletitle h2 a{
+    float: left;
+  }
+}

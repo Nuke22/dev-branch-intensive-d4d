@@ -9,6 +9,11 @@ libraries:
 libraries-override:
   olivero/global-styling: FALSE
 
+  olivero/layout_discovery_section:
+    css:
+      layout:
+        css/layout/layout-discovery-section-layout.css: false;
+
 regions:
   header: 'Header'
   content: 'Content'
