@@ -1,0 +1,7 @@
+@import "scss/variables";
+
+.fp-content-top .layout__region--third {
+  div:first-child > h2 {      // sidebar title
+    @include sidebar-title;
+  }
+}

@@ -20,7 +20,8 @@ $font-size-normal-minus: 0.813rem; // 13px
 $font-size-normal: 0.875rem; // 14px
 $font-size-normal-plus: 0.9rem; // 15px
 $font-size-big: 1.6rem;    // 25px
-$font-size-bigger: 2.6rem; // 42px
+$font-size-bigger: 1.875rem; // 30px
+$font-size-huge: 2.6rem; // 42px
 $font-size-top-logo: 70px;
 $font-size-top-sup: 12px;
 
@@ -48,4 +49,21 @@ $breakpoint2: 850px;
 @mixin centrify() {
   display: flex;
   justify-content: center;
+}
+
+@mixin exclusive() {
+  display: inline-block;
+  color: white;
+  background-color: $exclusive-color;
+  border-radius: 2px;
+  padding: 3px 5px;
+  font-size: $font-size-tag;
+  font-weight: $font-weight-medium-plus;
+  text-transform: uppercase;
+}
+
+@mixin sidebar-title() {
+  font-size: 32px;
+  font-weight: $font-weight-bold;
+  letter-spacing: -1px
 }
