@@ -1,0 +1,12 @@
+uuid: 84c6520b-dee0-40ea-9872-9a5f4448c0e6
+langcode: en
+status: true
+dependencies: {  }
+id: menupage_main_image
+label: 'Menupage | main image'
+classes: manupage-main-image
+type: section
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol
+weight: 0

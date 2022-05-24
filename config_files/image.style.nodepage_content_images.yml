@@ -1,0 +1,15 @@
+uuid: 627c4d36-e023-4ead-b3e0-6d541a2e9810
+langcode: en
+status: true
+dependencies: {  }
+name: nodepage_content_images
+label: 'Nodepage | content images'
+effects:
+  a94b6966-145d-4575-8e55-d124b30c9aed:
+    uuid: a94b6966-145d-4575-8e55-d124b30c9aed
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 830
+      height: 550
+      anchor: center-center

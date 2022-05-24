@@ -1,0 +1,12 @@
+uuid: e3599bf5-5354-4d17-8a81-5c87d9ec9f60
+langcode: en
+status: true
+dependencies: {  }
+id: fp_content_top
+label: 'FP content top'
+classes: fp-content-top
+type: section
+block_restrictions: {  }
+layout_restrictions:
+  - layout_threecol_section
+weight: 0
