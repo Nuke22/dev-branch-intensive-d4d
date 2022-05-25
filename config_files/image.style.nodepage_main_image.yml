@@ -1,0 +1,15 @@
+uuid: a741696c-b4f6-4c64-8c1f-6b84a9b162e9
+langcode: en
+status: true
+dependencies: {  }
+name: nodepage_main_image
+label: 'Nodepage | main image'
+effects:
+  e21742d3-47ed-4bf6-a7dd-5439d80f22e7:
+    uuid: e21742d3-47ed-4bf6-a7dd-5439d80f22e7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1390
+      height: 720
+      anchor: center-center

@@ -1,0 +1,11 @@
+uuid: a1297f6a-5c54-4d59-9abc-1950b34ef722
+langcode: en
+status: true
+dependencies: {  }
+id: top_block_side_content
+label: 'Top block side content'
+classes: top-block-side-content
+type: section
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

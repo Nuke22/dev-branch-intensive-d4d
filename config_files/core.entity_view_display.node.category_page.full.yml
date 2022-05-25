@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.category_page.field_category
+    - field.field.node.category_page.field_display_title
     - node.type.category_page
     - system.menu.menupage-menu
     - views.view.article_by_category
@@ -170,4 +171,5 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_display_title: true

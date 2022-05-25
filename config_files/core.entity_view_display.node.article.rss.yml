@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.field_body_via_paragraphs
     - field.field.node.article.field_custom_comments_field
+    - field.field.node.article.field_display_title
     - field.field.node.article.field_exclusive
     - field.field.node.article.field_global_tags
     - field.field.node.article.field_main_image
@@ -28,6 +29,7 @@ hidden:
   body: true
   field_body_via_paragraphs: true
   field_custom_comments_field: true
+  field_display_title: true
   field_exclusive: true
   field_global_tags: true
   field_main_image: true

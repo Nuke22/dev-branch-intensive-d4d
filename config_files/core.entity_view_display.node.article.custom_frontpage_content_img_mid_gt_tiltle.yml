@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.field_body_via_paragraphs
     - field.field.node.article.field_custom_comments_field
+    - field.field.node.article.field_display_title
     - field.field.node.article.field_exclusive
     - field.field.node.article.field_global_tags
     - field.field.node.article.field_main_image
@@ -14,8 +15,106 @@ dependencies:
     - image.style.medium
     - node.type.article
   module:
+    - layout_builder
+    - layout_discovery
     - media
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          685e32d2-390c-4b0a-a523-57441198fecd:
+            uuid: 685e32d2-390c-4b0a-a523-57441198fecd
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_main_image'
+              label: 'Main image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: frontpage_top_block_2_3
+                third_party_settings: {  }
+            weight: 0
+            additional:
+              layout_builder_styles_style: ''
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Header
+          context_mapping: {  }
+          layout_builder_styles_style: top_block_side_content
+        components:
+          ef51f4f1-6dcb-4f4e-aca8-0554839cdf1b:
+            uuid: ef51f4f1-6dcb-4f4e-aca8-0554839cdf1b
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_exclusive'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: hidden
+                settings:
+                  format: custom
+                  format_custom_false: ''
+                  format_custom_true: Exclusive
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          b31da7bf-b194-4aaf-b01e-42cd37fc43e6:
+            uuid: b31da7bf-b194-4aaf-b01e-42cd37fc43e6
+            region: content
+            configuration:
+              id: 'field_block:node:article:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: title_value_field_formatter
+                label: hidden
+                settings:
+                  tag: h2
+                  linked: 1
+                  classes: ''
+                third_party_settings: {  }
+            weight: 2
+            additional:
+              layout_builder_styles_style: ''
+          94765ebb-ea95-4ddd-8d36-04c1e65fa8ca:
+            uuid: 94765ebb-ea95-4ddd-8d36-04c1e65fa8ca
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_global_tags'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 _core:
   default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
 id: node.article.custom_frontpage_content_img_mid_gt_tiltle
@@ -54,5 +153,6 @@ hidden:
   body: true
   field_body_via_paragraphs: true
   field_custom_comments_field: true
+  field_display_title: true
   field_trending_tags: true
   links: true

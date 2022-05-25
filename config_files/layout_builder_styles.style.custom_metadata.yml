@@ -1,0 +1,11 @@
+uuid: 84dec884-c52d-47db-b78c-605ef74f1ef3
+langcode: en
+status: true
+dependencies: {  }
+id: custom_metadata
+label: 'Custom metadata'
+classes: custom-metadata
+type: section
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

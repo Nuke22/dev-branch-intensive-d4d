@@ -1,0 +1,48 @@
+@import "scss/variables";
+
+.frontpage-top-block {      // parent container for 3 nodes in a top block
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.frontpage-top-block .attachment-before {   // parent container for MAIN node in a top block
+  .top-block-main-content {                 // text on image positioning
+    position: absolute;
+    bottom: 0;
+    padding: 0 25px 25px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5%) 40%, rgba(0, 0, 0, 0%) 100%);
+  }
+
+  .block-field-blocknodearticlefield-global-tags a {   // main "global tag"
+    @include exclusive;
+  }
+
+  .block-field-blocknodearticletitle a {    // title
+    font-size: $font-size-huge;
+    font-weight: $font-weight-bold;
+    color: white;
+    &:hover {
+      color: #DEDBD9;
+    }
+  }
+
+  .block-field-blocknodearticlebody p {     //trimmed body
+    color: white;
+  }
+}
+
+.frontpage-top-block .view-content {     // parent for 2 side nodes
+  margin-left: 1.5rem;
+
+  .top-block-side-content {
+    padding: 16px 30px 17px 0;
+
+    .block-field-blocknodearticlefield-global-tags a{
+      color: black;
+    }
+    h2 {
+      margin: 0;
+    }
+  }
+}

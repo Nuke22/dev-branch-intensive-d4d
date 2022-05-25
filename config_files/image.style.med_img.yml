@@ -1,0 +1,15 @@
+uuid: 111a3392-6962-40f4-871e-893eb19e5432
+langcode: en
+status: true
+dependencies: {  }
+name: med_img
+label: 'Med img'
+effects:
+  ef194d8c-de51-4194-8e58-50aea7eee052:
+    uuid: ef194d8c-de51-4194-8e58-50aea7eee052
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 333
+      height: 233
+      anchor: center-center

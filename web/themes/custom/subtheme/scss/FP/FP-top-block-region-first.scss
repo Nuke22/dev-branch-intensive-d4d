@@ -1,0 +1,33 @@
+@import "scss/variables";
+
+.fp-content-top .layout__region--first{
+  div:first-child > h2 {      // sidebar title
+    @include sidebar-title;
+  }
+
+  .view-header {
+    font-family: Work Sans !important;
+    font-size: $font-size-normal-minus;
+    line-height: 1.2;
+    font-weight: 600;
+    text-transform: uppercase
+  }
+
+  .view-content .views-row .node__content > div {
+
+    &:nth-child(1) {
+      margin: 0;
+    }
+
+
+    &:nth-child(2) {
+      float: left;
+      display: inline-block;
+    }
+
+    &:nth-child(3) {
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+}

@@ -336,6 +336,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: frontpage-top-block
       header: {  }
       footer: {  }
       display_extenders: {  }

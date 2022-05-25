@@ -1,0 +1,11 @@
+uuid: fc91a419-5b6d-4102-8468-16807efa7c80
+langcode: en
+status: true
+dependencies: {  }
+id: custom_exclusive_and_title
+label: 'Custom exclusive and title'
+classes: custom-exclusive-and-title
+type: section
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

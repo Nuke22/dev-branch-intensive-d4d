@@ -1,0 +1,15 @@
+uuid: f70f3055-2e3d-4008-9489-3bff70a3f288
+langcode: en
+status: true
+dependencies: {  }
+name: frontpage_top_block_1_
+label: 'frontpage-top-block 1 '
+effects:
+  65274134-b82a-4a2e-a913-b1b9bf926449:
+    uuid: 65274134-b82a-4a2e-a913-b1b9bf926449
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 544
+      height: 600
+      anchor: center-center

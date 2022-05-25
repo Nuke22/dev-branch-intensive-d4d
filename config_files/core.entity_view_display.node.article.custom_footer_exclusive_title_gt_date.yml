@@ -7,13 +7,113 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.field_body_via_paragraphs
     - field.field.node.article.field_custom_comments_field
+    - field.field.node.article.field_display_title
     - field.field.node.article.field_exclusive
     - field.field.node.article.field_global_tags
     - field.field.node.article.field_main_image
     - field.field.node.article.field_trending_tags
     - node.type.article
   module:
+    - layout_builder
+    - layout_discovery
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Header
+          context_mapping: {  }
+          layout_builder_styles_style: custom_exclusive_and_title
+        components:
+          067b0f8c-a875-4402-b78b-bed412c8c08a:
+            uuid: 067b0f8c-a875-4402-b78b-bed412c8c08a
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_exclusive'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: hidden
+                settings:
+                  format: custom
+                  format_custom_false: ''
+                  format_custom_true: Exclusive
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          50c28b07-e041-4b76-a5a8-dfccd29a2346:
+            uuid: 50c28b07-e041-4b76-a5a8-dfccd29a2346
+            region: content
+            configuration:
+              id: 'field_block:node:article:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: title_value_field_formatter
+                label: hidden
+                settings:
+                  tag: h2
+                  linked: 1
+                  classes: ''
+                third_party_settings: {  }
+            weight: 2
+            additional:
+              layout_builder_styles_style: ''
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          40262ef2-efde-4592-921a-03f84a43236b:
+            uuid: 40262ef2-efde-4592-921a-03f84a43236b
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_global_tags'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          0194f51c-01c2-45aa-a189-68a79cf3ba25:
+            uuid: 0194f51c-01c2-45aa-a189-68a79cf3ba25
+            region: content
+            configuration:
+              id: 'field_block:node:article:created'
+              label: 'Authored on'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: timestamp
+                label: hidden
+                settings:
+                  date_format: custom
+                  custom_date_format: 'F d, Y'
+                  timezone: ''
+                third_party_settings: {  }
+            weight: 3
+            additional:
+              layout_builder_styles_style: ''
+        third_party_settings: {  }
 _core:
   default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
 id: node.article.custom_footer_exclusive_title_gt_date
@@ -43,6 +143,7 @@ hidden:
   body: true
   field_body_via_paragraphs: true
   field_custom_comments_field: true
+  field_display_title: true
   field_main_image: true
   field_trending_tags: true
   links: true

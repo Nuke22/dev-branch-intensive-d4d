@@ -7,13 +7,121 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.field_body_via_paragraphs
     - field.field.node.article.field_custom_comments_field
+    - field.field.node.article.field_display_title
     - field.field.node.article.field_exclusive
     - field.field.node.article.field_global_tags
     - field.field.node.article.field_main_image
     - field.field.node.article.field_trending_tags
     - node.type.article
   module:
+    - layout_builder
+    - layout_discovery
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          dda49b12-c185-4c01-bd81-a47eda2437d2:
+            uuid: dda49b12-c185-4c01-bd81-a47eda2437d2
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_global_tags'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Header
+          context_mapping: {  }
+          layout_builder_styles_style: custom_exclusive_and_title
+        components:
+          be52a498-9980-4b8a-bc51-4f44c24f6c66:
+            uuid: be52a498-9980-4b8a-bc51-4f44c24f6c66
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_exclusive'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: hidden
+                settings:
+                  format: custom
+                  format_custom_false: ''
+                  format_custom_true: Exclusive
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          614afbec-c7f7-44ef-b235-abfc204f1e5b:
+            uuid: 614afbec-c7f7-44ef-b235-abfc204f1e5b
+            region: content
+            configuration:
+              id: 'field_block:node:article:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: title_value_field_formatter
+                label: hidden
+                settings:
+                  tag: h2
+                  linked: 1
+                  classes: ''
+                third_party_settings: {  }
+            weight: 1
+            additional:
+              layout_builder_styles_style: ''
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: meta
+          context_mapping: {  }
+          layout_builder_styles_style: custom_metadata
+        components:
+          f78e1efb-8c63-49a6-9401-15f36e2a1795:
+            uuid: f78e1efb-8c63-49a6-9401-15f36e2a1795
+            region: content
+            configuration:
+              id: 'field_block:node:article:created'
+              label: 'Authored on'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: timestamp
+                label: hidden
+                settings:
+                  date_format: custom
+                  custom_date_format: 'F d, Y'
+                  timezone: ''
+                third_party_settings: {  }
+            weight: 0
+            additional:
+              layout_builder_styles_style: ''
+        third_party_settings: {  }
 _core:
   default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
 id: node.article.custom_sidebar_gt_exclusive_title_date
@@ -26,7 +134,7 @@ content:
     label: hidden
     settings:
       format: custom
-      format_custom_false: нє
+      format_custom_false: ''
       format_custom_true: Exclusive
     third_party_settings: {  }
     weight: 1
@@ -43,6 +151,7 @@ hidden:
   body: true
   field_body_via_paragraphs: true
   field_custom_comments_field: true
+  field_display_title: true
   field_main_image: true
   field_trending_tags: true
   links: true

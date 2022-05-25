@@ -53,8 +53,11 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  title_field_for_manage_display: 0
   toolbar: 0
   tour: 0
+  twig_tweak: 0
+  twig_xdebug: 0
   user: 0
   views_ui: 0
   views: 10

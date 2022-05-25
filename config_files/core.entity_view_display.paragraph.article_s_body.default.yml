@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.article_s_body.field_img
     - field.field.paragraph.article_s_body.field_text
-    - image.style.large
+    - image.style.nodepage_content_images
     - paragraphs.paragraphs_type.article_s_body
   module:
     - media
@@ -20,7 +20,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: large
+      image_style: nodepage_content_images
     third_party_settings: {  }
     weight: 1
     region: content

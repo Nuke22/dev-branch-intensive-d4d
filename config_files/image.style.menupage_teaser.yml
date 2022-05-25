@@ -1,0 +1,15 @@
+uuid: 6dd696c8-70be-49a0-82bf-1d4be3eaea3a
+langcode: en
+status: true
+dependencies: {  }
+name: menupage_teaser
+label: 'Menupage | teaser (520x360)'
+effects:
+  61037e5f-0cdb-46f7-a94c-53be35d21683:
+    uuid: 61037e5f-0cdb-46f7-a94c-53be35d21683
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 520
+      height: 360
+      anchor: center-center
