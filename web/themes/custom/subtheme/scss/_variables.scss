@@ -4,6 +4,7 @@ $base-color: #000;
 $highlight-color: #f43f3f;
 $exclusive-color: #ec3535;
 $something: #fff;
+$shade: #dedbd9;
 
 // font weights
 
@@ -65,5 +66,5 @@ $breakpoint2: 850px;
 @mixin sidebar-title() {
   font-size: 32px;
   font-weight: $font-weight-bold;
-  letter-spacing: -1px
+  letter-spacing: -1px;
 }

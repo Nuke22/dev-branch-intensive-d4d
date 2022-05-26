@@ -1,0 +1,57 @@
+@import "scss/variables";
+
+.nodepage-top-block {
+  position: relative;
+  max-width: 1390px;
+  margin: 3rem auto;
+
+  .field--name-field-main-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .global-tag-top {
+    background-color: rgba(0, 0, 0, 0%) !important;
+    position: absolute;
+    margin-left: 45%;
+    bottom: 30%;
+    z-index: 3;
+
+    a {
+      font-size: 17px;
+      line-height: 1;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: white;
+
+      &:hover {
+        color: $shade;
+      }
+    }
+  }
+
+  .block-field-blocknodearticletitle {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5%) 40%, rgba(0, 0, 0, 0%) 100%);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding-top: 20%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    & > .block__content {
+      max-width: 80%;
+      text-align: center;
+
+      span {
+        color: white;
+        font-weight: $font-weight-bold;
+        font-size: 54px;
+        line-height: 1.1;
+      }
+    }
+  }
+}
