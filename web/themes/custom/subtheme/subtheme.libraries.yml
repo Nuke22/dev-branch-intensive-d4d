@@ -3,4 +3,5 @@ global-styling:
     theme:
       dist/style.css: {}
   js:
-    js/bundle.js: {}
+    dist/bundle.js: {}
+    js/scroll-to-top.js: {}
