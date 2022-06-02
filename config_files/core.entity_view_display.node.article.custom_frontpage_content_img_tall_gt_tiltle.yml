@@ -61,7 +61,23 @@ third_party_settings:
                   link: true
                 third_party_settings: {  }
             weight: 1
-            additional: {  }
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: global-tag-top
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -87,7 +103,23 @@ third_party_settings:
                   format_custom_true: Exclusive
                 third_party_settings: {  }
             weight: 0
-            additional: {  }
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: title-top
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
           c6876ff2-43d0-4c08-8f01-43edc3e596b7:
             uuid: c6876ff2-43d0-4c08-8f01-43edc3e596b7
             region: content

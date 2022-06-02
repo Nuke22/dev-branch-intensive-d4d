@@ -1,0 +1,8 @@
+uuid: 0b510713-d9cb-4006-9d5d-46cb1c7f3448
+langcode: en
+status: true
+dependencies: {  }
+id: global_tag_exclusive_title
+label: 'Global tag + exclusive + title'
+revision: 0
+description: ''

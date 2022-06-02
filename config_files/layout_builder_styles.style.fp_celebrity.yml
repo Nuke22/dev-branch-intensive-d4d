@@ -1,0 +1,11 @@
+uuid: 6118581e-0b5e-4c25-b3b8-30571aeec2a5
+langcode: en
+status: true
+dependencies: {  }
+id: fp_celebrity
+label: 'FP Celebrity'
+classes: fp-celebrity
+type: section
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

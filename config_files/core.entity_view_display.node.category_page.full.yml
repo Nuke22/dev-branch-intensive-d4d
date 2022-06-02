@@ -76,6 +76,7 @@ third_party_settings:
         layout_settings:
           label: 'Highlighted nodes'
           context_mapping: {  }
+          layout_builder_styles_style: nodepage_highlighted
         components:
           84a2f280-bd8d-4cf4-bb93-44bdd22b96a6:
             uuid: 84a2f280-bd8d-4cf4-bb93-44bdd22b96a6

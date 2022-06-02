@@ -228,8 +228,8 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: '<strong>Popular</strong>'
-            format: basic_html
+            value: '<span class="rectangular-category-title red-background">Breaking</span>'
+            format: full_html
           tokenize: false
       footer: {  }
       display_extenders: {  }
