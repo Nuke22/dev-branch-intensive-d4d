@@ -1,0 +1,5 @@
+name: Custom paragraph align
+description: My module
+package: MyCustom category
+type: module
+core_version_requirement: ^9 || ^10
