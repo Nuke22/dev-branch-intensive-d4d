@@ -1,0 +1,11 @@
+uuid: 313e4955-772e-425d-82c9-138cefcb9363
+langcode: en
+status: true
+dependencies: {  }
+id: nodepage_highlighted
+label: 'Nodepage | highlighted'
+classes: nodepage-highlighted
+type: section
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

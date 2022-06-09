@@ -1,0 +1,11 @@
+uuid: daa98ee2-3b1e-441a-b751-c4b83621eedb
+langcode: en
+status: true
+dependencies: {  }
+id: fp_exclusive_content
+label: 'FP Exclusive content'
+classes: fp-exclusive-content
+type: section
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

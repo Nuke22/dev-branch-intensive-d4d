@@ -4,6 +4,10 @@
 @import "menu";
 @import "footer";
 @import "scroll-to-top-styles";
+@import "highlighted-photos";
+
+// Front page
+
 @import "FP/FP-highlighted";
 @import "FP/FP-top-block";
 @import "FP/FP-top-block-region-first";
@@ -20,3 +24,4 @@
 
 @import "NP/NP-top-block";
 @import "NP/NP-author-date";
+@import "NP/NP-paragraph-img-align";

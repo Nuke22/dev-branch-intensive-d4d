@@ -590,7 +590,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<a href="/Politics">View all -></a>'
+            value: '<a href="/node/59">View all -></a>'
             format: full_html
           tokenize: false
       display_extenders: {  }

@@ -1,0 +1,18 @@
+uuid: 2c77c3bc-baed-460b-8347-87d3a4851824
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.global_tag_exclusive_title
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+id: block_content.global_tag_exclusive_title.default
+targetEntityType: block_content
+bundle: global_tag_exclusive_title
+mode: default
+content: {  }
+hidden: {  }

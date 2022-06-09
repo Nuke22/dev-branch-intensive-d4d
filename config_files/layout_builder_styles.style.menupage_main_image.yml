@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: menupage_main_image
-label: 'Menupage | main image'
-classes: manupage-main-image
+label: 'Nodepage | top  block'
+classes: nodepage-top-block
 type: section
 block_restrictions: {  }
 layout_restrictions:

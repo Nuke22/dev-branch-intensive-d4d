@@ -200,7 +200,20 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<span class="rectangular-category-title red-background">Exclusive content</span>'
+            format: full_html
+          tokenize: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -314,7 +327,9 @@ display:
       defaults:
         style: false
         row: false
+        header: false
       display_description: ''
+      header: {  }
       display_extenders: {  }
     cache_metadata:
       max-age: -1

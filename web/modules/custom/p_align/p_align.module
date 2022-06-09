@@ -1,0 +1,6 @@
+<?php
+
+function p_align_preprocess_node(&$variables) {
+  \Drupal::messenger()->addError('test');
+  $t = 1;
+}

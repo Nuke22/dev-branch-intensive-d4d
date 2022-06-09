@@ -1,0 +1,22 @@
+uuid: 1239e3e8-c913-429b-b80c-71f9db680e5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.global_tag_exclusive_title
+    - field.field.block_content.global_tag_exclusive_title.layout_builder__layout
+id: block_content.global_tag_exclusive_title.default
+targetEntityType: block_content
+bundle: global_tag_exclusive_title
+mode: default
+content:
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  layout_builder__layout: true
