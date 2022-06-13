@@ -1,0 +1,26 @@
+uuid: ef72b2db-d981-44fe-acda-85d0cfa4c830
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_classes
+    - exchange
+  theme:
+    - subtheme
+third_party_settings:
+  block_classes:
+    block_class: exchange
+id: exchangerate
+theme: subtheme
+region: header
+weight: 0
+provider: null
+plugin: my_block_example_block
+settings:
+  id: my_block_example_block
+  label: 'Exchange rate'
+  label_display: visible
+  provider: exchange
+  my_block_settings: null
+  hello_block_name: lknl
+visibility: {  }
