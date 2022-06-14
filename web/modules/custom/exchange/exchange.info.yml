@@ -1,0 +1,7 @@
+name: Custom exchange module
+type: module
+description: Define a custom block.
+core_version_requirement: ^9 || ^10
+package: MyCustom category
+dependencies:
+  - block
