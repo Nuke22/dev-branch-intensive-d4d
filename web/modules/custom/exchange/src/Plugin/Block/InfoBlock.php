@@ -25,15 +25,16 @@ class InfoBlock extends BlockBase {
     $client = new Client(['headers' => ["Content-Type" => "text/plain",
       "apikey" => "nLLb5KOToJRW5BrWJIdn7Ssy49Ca4iEA"]]);
     try {
-      $response = $client->get('https://api.apilayer.com/exchangerates_data/convert?to=USD&from=UAH&amount=1');
+      $response = $client->get('https://api.apilayer.com/exchangerates_data/convert?to=UAH&from=USD&amount=1');
       $result = json_decode($response->getBody(), TRUE);
-      $a = $result["info"]["rate"];
+      $raw_course = $result["info"]["rate"];
     }
     catch (RequestException $e) {
       $boo = 1;// log exception
     }
+    $rounded_course = round($raw_course, 2);
     return [
-      '#markup' => $this->t("$a"),
+      '#markup' => $this->t("$rounded_course UAH for 1 USD today"),
     ];
   }
 
